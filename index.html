@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detección de idioma y redireccionamiento</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        function detectLanguage() {
+            // Get the user's preferred language
+            var preferredLanguage = navigator.languages[0];
+
+            // Redirect to the appropriate page
+            if (preferredLanguage == "es") {
+                window.location.href = "es/Portada.html";
+            } else if (preferredLanguage == "de-DE") {
+                window.location.href = "de/Portada";
+            } else {
+                window.location.href = "en/Home.html";
+            }
+
+            // Print the detected language
+            //document.getElementById("detectedLanguage").innerHTML = preferredLanguage;
+        }
+
+        window.onload = function() {
+            detectLanguage();
+        };
+    </script>
+
+    <!-- <h1>Página de detección y redireccionamiento de idioma</h1>
+
+    <p>Esta página web detectará el idioma preferido del usuario y lo redireccionará a la página apropiada.</p> -->
+
+    <div id="detectedLanguage"></div>
+</body>
+</html>

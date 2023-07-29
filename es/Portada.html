@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+  <title>Allan Vega</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: var(--background-color);
+      }
+:root {
+  --primary-color: #FFC6A5;      /* Rosa pastel */
+  --secondary-color: #CFFFE5;    /* Verde menta */
+  --accent-color: #FFEE93;       /* Amarillo pastel */
+  --background-color: #F0F0F0;   /* Gris claro */
+  --optional-color: #D1C6E1;     /* Lila claro (opcional) */
+}
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .logo {
+        width: 200px;
+        height: auto;
+      }
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+      }
+      .nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0 auto;
+        padding: 0;
+      }
+      .nav ul li {
+        margin-left: 20px;
+      }
+      .nav ul li a {
+        text-decoration: none;
+        color: var(--text-color);
+        font-weight: bold;
+      }
+      .nav ul li a:hover {
+        color: var(--accent-color);
+      }
+      #banner {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #banner img {
+        width: auto;
+        height: 100%;
+      }
+      .content {
+        margin-top: 20px;
+      }
+      .content h1 {
+        color: var(--primary-color);
+        font-size: 32px;
+      }
+      .content p {
+        color: var(--text-color);
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      .horizontal-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .horizontal-section img {
+        max-width: 40%;
+        height: auto;
+      }
+      .horizontal-section p {
+        line-height: 2.5; /* Ajustar este valor según tus necesidades */
+        flex: 1; /* Para que el párrafo ocupe el espacio restante */
+      }
+      #bannerPS {
+        flex: 1; /* Para que el banner ocupe el espacio restante */
+        display: flex;
+        justify-content: space-between;
+        max-width: 40%;
+      }
+      #bannerPP {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        max-width: 40%;
+      }
+      #bannerAC {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        max-width: 40%;
+      }
+      #bannerDP {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        max-width: 40%;
+      }
+      #bannerPM {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        max-width: 40%;
+      }
+      .banner-image {
+        max-height: 200px; /* Ajustar la altura máxima deseada */
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .banner-image img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        /* Borde de fotos */
+/*        border: 5px solid black;*/
+      /* Estilo para el ícono de corazón */
+      }
+      .heart-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .heart-icon i {
+        margin-bottom: 5px; /* Ajusta este valor para cambiar la separación entre el ícono y el texto */
+        color: var(--secondary-color);
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Encabezado     -->
+    <div class="nav">
+      <!-- <img src="Images/foto.jpg" alt="Logo" class="logo"> -->
+      <p style="text-align:center; font-size:38px; color:var(--primary-color);font-family: Arial, serif;font-weight: Bold;">Allan Vega</p>
+      <ul>
+        <li><a href="#sinfonica"><span class="heart-icon"><i class="fas fa-drum"></i></span><span style="display: inline-block; text-align: center;">Percusión<br>Sinfónica</span></a></li>
+        <li><a href="#popular"><span class="heart-icon"><i class="fa-solid fa-headphones"></i></span><span style="display: inline-block; text-align: center;">Percusión<br>Popular</span></a></li>
+        <li><a href="#arreglos"><span class="heart-icon"><i class="fa-solid fa-music"></i></span><span style="display: inline-block; text-align: center;">Arreglos y<br>Composición</span></a></li>
+        <li><a href="#docencia"><span class="heart-icon"><i class="fa-solid fa-chalkboard-user"></i></i></span><span style="display: inline-block; text-align: center;">Docencia y<br>Pedagogía</span></a></li>
+        <li><a href="#produccion"><span class="heart-icon"><i class="fa-solid fa-sliders"></i></span><span style="display: inline-block; text-align: center;">Producción<br>Musical<br><span style="font-size: 0.8em;">(Proyecto actual)</span></span></a></li>
+      </ul>
+    </div>
+
+    <!-- Bloque para dividir -->
+    <div style="width: 100%; height: 5px; background-color:var(--secondary-color); margin-top: 20px; margin-bottom: 20px;"></div>
+
+    <!-- Banner del encabezado -->
+    
+    <div id="banner">
+      <!-- <img src="../Images/PS/PS_3.jpg" alt="Imagen A"> -->
+      <img src="../Images/PS/PS_5.jpg" alt="Imagen B">
+      <img src="../Images/PS/PS_4.jpg" alt="Imagen C">
+      <img src="../Images/PP/PP_6.jpg" alt="Imagen F">
+      <img src="../Images/PS/PS_6.jpg" alt="Imagen D">
+      <img src="../Images/PS/PS_10.jpg" alt="Imagen E">
+
+    </div>
+
+    <script>
+      // Obtener el elemento con el id "banner"
+      var banner = document.getElementById("banner");
+      // Obtener las imágenes dentro del banner
+      var images = banner.getElementsByTagName("img");
+      // Establecer un índice para indicar qué imagen se muestra
+      var index = 0;
+      // Establecer una función para cambiar la imagen cada 3 segundos
+      function changeImage() {
+        // Ocultar todas las imágenes
+        for (var i = 0; i < images.length; i++) {
+          images[i].style.display = "none";
+        }
+        // Mostrar la imagen correspondiente al índice
+        images[index].style.display = "block";
+        // Incrementar el índice o volver a cero si llega al final
+        index++;
+        if (index == images.length) {
+          index = 0;
+        }
+      }
+      //Tiempo para el cambio de imágenes en ms
+      setInterval(changeImage, 2000);
+    </script>
+
+    <div class="content">
+      <h1 style="text-align: center;">¡Hola!</h1>
+      <p style="text-align: center;">¡Gracias por visitar mi página web!<br><br>Te comparto un poco de mi trayectoria musical a través de las siguientes secciones.</p>
+    </div>
+
+    <!-- Bloque o línea para dividir -->
+    <div style="width: 100%; height: 5px; background-color:var(--secondary-color); margin-top: 20px; margin-bottom: 20px;"></div>
+
+    <!-- //###################################################################################################### -->
+
+    <!-- Título -->
+    <h1 style="text-align:left;" id="sinfonica">Percusión sinfónica</h1>
+
+    <div class="horizontal-section">
+      <p style="margin-right: 10px; font-size: 14px; text-align: justify;">Me gradué de Música con Concentración en Estudios Instrumentales en Percusión, he sido percusionista de las principales orquestas sinfónicas de Costa Rica y he participado en otras fuera del país. He sido percusionista de bandas sinfónicas, ensambles de percusión y otras agrupaciones de cámara, interpretando repertorios que van desde lo clásico hasta lo contemporáneo.</p>
+
+    <!-- Banner de Percusión sinfónica -->
+
+      <div id="bannerPS">
+<!--    <div class="banner-image">
+          <img src="../Images/PS/PS_1.jpg" alt="Imagen a la derecha">
+        </div>
+        <div class="banner-image">
+          <img src="../Images/PS/PS_2.jpg" alt="Imagen a la derecha">
+        </div> -->
+        <div class="banner-image">
+          <img src="../Images/PS/PS_24.jpg" alt="Imagen a la derecha">
+        </div>
+        <div class="banner-image">
+          <img src="../Images/PS/PS_3.jpg" alt="Imagen a la derecha">
+        </div>
+        <div class="banner-image">
+          <img src="../Images/PS/PS_42.jpg" alt="Imagen a la derecha">
+        </div>
+        <div class="banner-image">
+          <img src="../Images/PS/PS_15.jpg" alt="Imagen a la derecha">
+        </div>
+        <div class="banner-image">
+          <img src="../Images/PS/PS_43.jpg" alt="Imagen a la derecha">
+        </div>
+        <div class="banner-image">
+          <img src="../Images/PS/PS_21.jpg" alt="Imagen a la derecha">
+        </div>
+        <div class="banner-image">
+          <img src="../Images/PS/PS_44.jpg" alt="Imagen a la derecha">
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Obtener el elemento con el id "bannerPS"
+      var bannerPS = document.getElementById("bannerPS");
+      // Obtener las imágenes dentro del bannerPS
+      var imagesPS = bannerPS.getElementsByTagName("img");
+      // Establecer un índice para indicar qué imagen se muestra
+      var indexPS = 0;
+      // Establecer una función para cambiar la imagen cada 3 segundos
+      function changeImagePS() {
+        // Ocultar todas las imágenes
+        for (var i = 0; i < imagesPS.length; i++) {
+          imagesPS[i].style.display = "none";
+        }
+        // Mostrar la imagen correspondiente al índice
+        imagesPS[indexPS].style.display = "block";
+        // Incrementar el índice o volver a cero si llega al final
+        indexPS++;
+        if (indexPS == imagesPS.length) {
+          indexPS = 0;
+        }
+      }
+      // Llamar a la función cada 3 segundos
+      setInterval(changeImagePS, 2000);
+    </script>
+
+    <!-- Bloque o línea para dividir -->
+    <div style="width: 100%; height: 5px; background-color:var(--secondary-color); margin-top: 20px; margin-bottom: 20px;"></div>
+
+    <!-- //###################################################################################################### -->
+
+    <!-- Título -->
+    <h1 style="text-align:left;" id="popular">Percusión Popular</h1>
+
+    <!-- Banner de Percusión Popular -->
+
+    <div class="horizontal-section">
+      <div id="bannerPP">
+        <div class="banner-image">
+          <img src="../Images/PP/PP_2.jpg" alt="Imagen a la izquierda">
+        </div>
+        <div class="banner-image">
+          <img src="../Images/PP/PP_8.jpg" alt="Imagen a la izquierda">
+        </div>
+        <div class="banner-image">
+          <img src="../Images/PP/PP_1.jpg" alt="Imagen a la izquierda">
+        </div>
+        <div class="banner-image">
+          <img src="../Images/PP/PP_5.jpg" alt="Imagen a la izquierda">
+        </div>
+        <div class="banner-image">
+          <img src="../Images/PP/PP_7.jpg" alt="Imagen a la izquierda">
+        </div>
+        <div class="banner-image">
+          <img src="../Images/PP/PP_9.jpg" alt="Imagen a la izquierda">
+        </div>
+        <div class="banner-image">
+          <img src="../Images/PP/PP_3.jpg" alt="Imagen a la izquierda">
+        </div>
+      </div>
+      <p style="margin-left: 10px; text-align: justify; font-size: 14px;">He integrado agrupaciones de música tradicional de Costa Rica con las que he representado al país en distintos lugares de América, Europa y Asia, tocando marimba, batería, congas o bongó. Integré un trío de música popular brasileña (MPB) con el que me especialicé en pandeiro y batería para samba y bossa nova. Estudié batería para jazz, rock y ritmos latinos y he tocado para grupos de Ska, reggae y música latina como salsa, timba, merengue, cumbia y otros géneros.</p>
+    </div>
+
+    <script>
+      // Obtener el elemento con el id "bannerPP"
+      var bannerPP = document.getElementById("bannerPP");
+      // Obtener las imágenes dentro del bannerPP
+      var imagesPP = bannerPP.getElementsByTagName("img");
+      // Establecer un índice para indicar qué imagen se muestra
+      var indexPP = 0;
+      // Establecer una función para cambiar la imagen cada 3 segundos
+      function changeImagePP() {
+        // Ocultar todas las imágenes
+        for (var i = 0; i < imagesPP.length; i++) {
+          imagesPP[i].style.display = "none";
+        }
+        // Mostrar la imagen correspondiente al índice
+        imagesPP[indexPP].style.display = "block";
+        // Incrementar el índice o volver a cero si llega al final
+        indexPP++;
+        if (indexPP == imagesPP.length) {
+          indexPP = 0;
+        }
+      }
+      // Llamar a la función cada 3 segundos
+      setInterval(changeImagePP, 2000);
+    </script>
+
+    <!-- Bloque o línea para dividir -->
+    <div style="width: 100%; height: 5px; background-color:var(--secondary-color); margin-top: 20px; margin-bottom: 20px;"></div>
+
+    <!-- //###################################################################################################### -->
+
+    <!-- Título -->
+    <h1 style="text-align:left;" id="arreglos">Arreglos y composición</h1>
+
+    <div class="horizontal-section">
+      <p style="margin-right: 10px; text-align: justify;">He escrito arreglos para agrupaciones de música sinfónica y popular como ensambles de percusión, ensambles folclóricos y orquestas de salsa y he compuesto música aplicada para agrupaciones de danza. Trabajo con los softwares de notación musical más usados en la industria, como Sibelius, Musescore o Finale.</p>
+
+    <!-- Banner de Arreglos y composición -->
+
+      <div id="bannerAC">
+        <div class="banner-image">
+          <img src="../Images/AC/AC_1.jpg" alt="Imagen a la derecha">
+        </div>
+        <div class="banner-image">
+          <img src="../Images/AC/AC_2.jpg" alt="Imagen a la derecha">
+        </div>
+        <div class="banner-image">
+          <img src="../Images/AC/AC_6.jpg" alt="Imagen a la derecha">
+        </div>
+        <div class="banner-image">
+          <img src="../Images/AC/AC_8.jpg" alt="Imagen a la derecha">
+        </div>
+<!--         <div class="banner-image">
+          <img src="../Images/AC/AC_7.jpg" alt="Imagen a la derecha">
+        </div> -->
+      </div>
+    </div>
+
+    <script>
+      // Obtener el elemento con el id "bannerAC"
+      var bannerAC = document.getElementById("bannerAC");
+      // Obtener las imágenes dentro del bannerAC
+      var imagesAC = bannerAC.getElementsByTagName("img");
+      // Establecer un índice para indicar qué imagen se muestra
+      var indexAC = 0;
+      // Establecer una función para cambiar la imagen cada 3 segundos
+      function changeImageAC() {
+        // Ocultar todas las imágenes
+        for (var i = 0; i < imagesAC.length; i++) {
+          imagesAC[i].style.display = "none";
+        }
+        // Mostrar la imagen correspondiente al índice
+        imagesAC[indexAC].style.display = "block";
+        // Incrementar el índice o volver a cero si llega al final
+        indexAC++;
+        if (indexAC == imagesAC.length) {
+          indexAC = 0;
+        }
+      }
+      // Llamar a la función cada 3 segundos
+      setInterval(changeImageAC, 3000);
+    </script>
+
+    <!-- Bloque o línea para dividir -->
+    <div style="width: 100%; height: 5px; background-color:var(--secondary-color); margin-top: 20px; margin-bottom: 20px;"></div>
+
+    <!-- //###################################################################################################### -->
+
+    <!-- Título -->
+    <h1 style="text-align:left;" id="docencia">Docencia y pedagogía</h1>
+
+    <!-- Banner de Docencia y pedagogía -->
+
+    <div class="horizontal-section">
+            <div id="bannerDP">
+        <div class="banner-image">
+          <img src="../Images/DP/DP_3.jpg" alt="Imagen a la izquierda">
+        </div>
+        <div class="banner-image">
+          <img src="../Images/DP/DP_2.jpg" alt="Imagen a la izquierda">
+        </div>
+        <div class="banner-image">
+          <img src="../Images/DP/DP_6.jpg" alt="Imagen a la izquierda">
+        </div>
+        <div class="banner-image">
+          <img src="../Images/DP/DP_5.jpg" alt="Imagen a la izquierda">
+        </div>
+        <div class="banner-image">
+          <img src="../Images/DP/DP_1.jpg" alt="Imagen a la izquierda">
+        </div>
+      </div>
+      <p style="margin-left: 10px; text-align: justify;">Me gradué de Docencia en Música y trabajé como profesor de percusión sinfónica en el Conservatorio de Castella en Costa Rica. He impartido clases teóricas y prácticas de instrumentos de percusión y batería, así como clases de lectura, armonía y otras areas del lenguaje musical.</p>
+    </div>
+
+    <script>
+      // Obtener el elemento con el id "bannerDP"
+      var bannerDP = document.getElementById("bannerDP");
+      // Obtener las imágenes dentro del bannerDP
+      var imagesDP = bannerDP.getElementsByTagName("img");
+      // Establecer un índice para indicar qué imagen se muestra
+      var indexDP = 0;
+      // Establecer una función para cambiar la imagen cada 3 segundos
+      function changeImageDP() {
+        // Ocultar todas las imágenes
+        for (var i = 0; i < imagesDP.length; i++) {
+          imagesDP[i].style.display = "none";
+        }
+        // Mostrar la imagen correspondiente al índice
+        imagesDP[indexDP].style.display = "block";
+        // Incrementar el índice o volver a cero si llega al final
+        indexDP++;
+        if (indexDP == imagesDP.length) {
+          indexDP = 0;
+        }
+      }
+      // Llamar a la función cada 3 segundos
+      setInterval(changeImageDP, 2000);
+    </script>
+
+    <!-- Bloque o línea para dividir -->
+    <div style="width: 100%; height: 5px; background-color:var(--secondary-color); margin-top: 20px; margin-bottom: 20px;"></div>
+
+    <!-- //###################################################################################################### -->
+
+    <!-- Título -->
+    <h1 style="text-align:left;" id="produccion">Producción musical <span style="font-size: 0.6em;">(Proyecto actual)</span></h1>
+
+    <div class="horizontal-section">
+      <p style="margin-right: 10px; text-align: justify;">Desde el 2022 estudio una maestría en producción musical que incluye música electrónica y urbana, escritura de canciones, composición de música para cine y composición e implementación de música para videojuegos.</p>
+
+    <!-- Banner de Producción musical -->
+
+      <div id="bannerPM">
+        <div class="banner-image">
+          <img src="../Images/PM/PM_1.jpg" alt="Imagen a la derecha">
+        </div>
+        <div class="banner-image">
+          <img src="../Images/PM/PM_2.jpg" alt="Imagen a la derecha">
+        </div>
+        <div class="banner-image">
+          <img src="../Images/PM/PM_3.jpg" alt="Imagen a la derecha">
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Obtener el elemento con el id "bannerPM"
+      var bannerPM = document.getElementById("bannerPM");
+      // Obtener las imágenes dentro del bannerPM
+      var imagesPM = bannerPM.getElementsByTagName("img");
+      // Establecer un índice para indicar qué imagen se muestra
+      var indexPM = 0;
+      // Establecer una función para cambiar la imagen cada 3 segundos
+      function changeImagePM() {
+        // Ocultar todas las imágenes
+        for (var i = 0; i < imagesPM.length; i++) {
+          imagesPM[i].style.display = "none";
+        }
+        // Mostrar la imagen correspondiente al índice
+        imagesPM[indexPM].style.display = "block";
+        // Incrementar el índice o volver a cero si llega al final
+        indexPM++;
+        if (indexPM == imagesPM.length) {
+          indexPM = 0;
+        }
+      }
+      // Llamar a la función cada 3 segundos
+      setInterval(changeImagePM, 2000);
+    </script>
+
+    <!-- Bloque o línea para dividir -->
+    <div style="width: 100%; height: 5px; background-color:var(--secondary-color); margin-top: 20px; margin-bottom: 20px;"></div>
+
+  </div>
+</body>
+</html>
+
+<!-- Ícono a cada apartado en menú -->
+
+
