@@ -1,0 +1,134 @@
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+  }
+  /*2# Paleta*/
+  :root {
+    --primary-color: #2E86AB;      /* Azul profundo */
+    --secondary-color: #F6D55C;    /* Amarillo mostaza */
+    --accent-color: #E63946;       /* Rojo coral */
+    --background-color: #F1FAEE;   /* Blanco verdoso */
+    --optional-color: #A8DADC;     /* Verde turquesa (opcional) */
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Los elementos hijos se colocarán uno debajo del otro */
+  }
+  /* Estilos para dispositivos móviles con ancho de pantalla menor o igual a 768px (puedes ajustar el valor según tus necesidades) */
+  @media screen and (max-width: 768px) {
+    /* Cambiar la dirección del contenedor a columna para que los elementos se apilen verticalmente */
+    .container {
+      flex-direction: column;
+    }
+  }
+  .logo {
+    width: 200px;
+    height: auto;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .nav ul li {
+    margin-left: 20px;
+  }
+  .nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+  }
+  .nav ul li a:hover {
+    color: var(--accent-color);
+  }
+  #banner {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #banner img {
+    width: auto;
+    height: 100%;
+  }
+  .content {
+    margin-top: 20px;
+  }
+  .content h1 {
+    color: var(--primary-color);
+    font-size: 32px;
+  }
+  .content p {
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .horizontal-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .horizontal-section img {
+    max-width: 40%;
+    height: auto;
+  }
+  .horizontal-section p {
+    line-height: 2.5; /* Ajustar este valor según tus necesidades */
+    flex: 1; /* Para que el párrafo ocupe el espacio restante */
+  }
+  #bannerPS,
+  #bannerPP,
+  #bannerAC,
+  #bannerDP,
+  #bannerPM {
+    flex: 1; /* Para que el banner ocupe el espacio restante */
+    display: flex;
+    justify-content: space-between;
+    max-width: 40%;
+  }
+  /* Estilos para las imágenes dentro del banner */
+  .banner-image {
+    max-height: 200px; /* Ajustar la altura máxima deseada */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner-image img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  }
+  .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .icon i {
+    margin-bottom: 5px; /* Ajusta este valor para cambiar la separación entre el ícono y el texto */
+    color: var(--secondary-color);
+  }
+  /* Estilos para la línea separadora con bordes redondeados */
+  .divider {
+    width: 100%;
+    height: 5px;
+    background-color: var(--secondary-color);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px; /* Ajusta este valor para controlar el radio de los bordes redondeados */
+  }
+</style>

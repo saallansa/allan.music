@@ -1,145 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../Config/styles.css">
   <title>Allan Vega</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: var(--background-color);
-      }
-:root {
-  --primary-color: #FFC6A5;      /* Rosa pastel */
-  --secondary-color: #CFFFE5;    /* Verde menta */
-  --accent-color: #FFEE93;       /* Amarillo pastel */
-  --background-color: #F0F0F0;   /* Gris claro */
-  --optional-color: #D1C6E1;     /* Lila claro (opcional) */
-}
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-      .logo {
-        width: 200px;
-        height: auto;
-      }
-      .nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 20px;
-      }
-      .nav ul {
-        list-style: none;
-        display: flex;
-        margin: 0 auto;
-        padding: 0;
-      }
-      .nav ul li {
-        margin-left: 20px;
-      }
-      .nav ul li a {
-        text-decoration: none;
-        color: var(--text-color);
-        font-weight: bold;
-      }
-      .nav ul li a:hover {
-        color: var(--accent-color);
-      }
-      #banner {
-        width: 100%;
-        height: 400px;
-        object-fit: cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      #banner img {
-        width: auto;
-        height: 100%;
-      }
-      .content {
-        margin-top: 20px;
-      }
-      .content h1 {
-        color: var(--primary-color);
-        font-size: 32px;
-      }
-      .content p {
-        color: var(--text-color);
-        font-size: 18px;
-        line-height: 1.5;
-      }
-      .horizontal-section {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      .horizontal-section img {
-        max-width: 40%;
-        height: auto;
-      }
-      .horizontal-section p {
-        line-height: 2.5; /* Ajustar este valor según tus necesidades */
-        flex: 1; /* Para que el párrafo ocupe el espacio restante */
-      }
-      #bannerPS {
-        flex: 1; /* Para que el banner ocupe el espacio restante */
-        display: flex;
-        justify-content: space-between;
-        max-width: 40%;
-      }
-      #bannerPP {
-        flex: 1;
-        display: flex;
-        justify-content: space-between;
-        max-width: 40%;
-      }
-      #bannerAC {
-        flex: 1;
-        display: flex;
-        justify-content: space-between;
-        max-width: 40%;
-      }
-      #bannerDP {
-        flex: 1;
-        display: flex;
-        justify-content: space-between;
-        max-width: 40%;
-      }
-      #bannerPM {
-        flex: 1;
-        display: flex;
-        justify-content: space-between;
-        max-width: 40%;
-      }
-      .banner-image {
-        max-height: 200px; /* Ajustar la altura máxima deseada */
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .banner-image img {
-        max-width: 100%;
-        max-height: 100%;
-        width: auto;
-        height: auto;
-        /* Borde de fotos */
-/*        border: 5px solid black;*/
-      /* Estilo para el ícono de corazón */
-      }
-      .heart-icon {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      .heart-icon i {
-        margin-bottom: 5px; /* Ajusta este valor para cambiar la separación entre el ícono y el texto */
-        color: var(--secondary-color);
-      }
-    </style>
 </head>
 <body>
   <div class="container">
@@ -149,19 +13,18 @@
       <!-- <img src="Images/foto.jpg" alt="Logo" class="logo"> -->
       <p style="text-align:center; font-size:38px; color:var(--primary-color);font-family: Arial, serif;font-weight: Bold;">Allan Vega</p>
       <ul>
-        <li><a href="#sinfonica"><span class="heart-icon"><i class="fas fa-drum"></i></span><span style="display: inline-block; text-align: center;">Percusión<br>Sinfónica</span></a></li>
-        <li><a href="#popular"><span class="heart-icon"><i class="fa-solid fa-headphones"></i></span><span style="display: inline-block; text-align: center;">Percusión<br>Popular</span></a></li>
-        <li><a href="#arreglos"><span class="heart-icon"><i class="fa-solid fa-music"></i></span><span style="display: inline-block; text-align: center;">Arreglos y<br>Composición</span></a></li>
-        <li><a href="#docencia"><span class="heart-icon"><i class="fa-solid fa-chalkboard-user"></i></i></span><span style="display: inline-block; text-align: center;">Docencia y<br>Pedagogía</span></a></li>
-        <li><a href="#produccion"><span class="heart-icon"><i class="fa-solid fa-sliders"></i></span><span style="display: inline-block; text-align: center;">Producción<br>Musical<br><span style="font-size: 0.8em;">(Proyecto actual)</span></span></a></li>
+        <li><a href="#sinfonica"><span class="icon"><i class="fas fa-drum"></i></span><span style="display: inline-block; text-align: center;">Percusión<br>Sinfónica</span></a></li>
+        <li><a href="#popular"><span class="icon"><i class="fa-solid fa-headphones"></i></span><span style="display: inline-block; text-align: center;">Percusión<br>Popular</span></a></li>
+        <li><a href="#arreglos"><span class="icon"><i class="fa-solid fa-music"></i></span><span style="display: inline-block; text-align: center;">Arreglos y<br>Composición</span></a></li>
+        <li><a href="#docencia"><span class="icon"><i class="fa-solid fa-chalkboard-user"></i></i></span><span style="display: inline-block; text-align: center;">Docencia y<br>Pedagogía</span></a></li>
+        <li><a href="#produccion"><span class="icon"><i class="fa-solid fa-sliders"></i></span><span style="display: inline-block; text-align: center;">Producción<br>Musical<br><span style="font-size: 0.8em;">(Proyecto actual)</span></span></a></li>
       </ul>
     </div>
-
-    <!-- Bloque para dividir -->
-    <div style="width: 100%; height: 5px; background-color:var(--secondary-color); margin-top: 20px; margin-bottom: 20px;"></div>
+    
+    <!-- Línea divisora con bordes redondeados -->
+    <div class="divider"></div>
 
     <!-- Banner del encabezado -->
-    
     <div id="banner">
       <!-- <img src="../Images/PS/PS_3.jpg" alt="Imagen A"> -->
       <img src="../Images/PS/PS_5.jpg" alt="Imagen B">
@@ -202,8 +65,8 @@
       <p style="text-align: center;">¡Gracias por visitar mi página web!<br><br>Te comparto un poco de mi trayectoria musical a través de las siguientes secciones.</p>
     </div>
 
-    <!-- Bloque o línea para dividir -->
-    <div style="width: 100%; height: 5px; background-color:var(--secondary-color); margin-top: 20px; margin-bottom: 20px;"></div>
+    <!-- Línea divisora con bordes redondeados -->
+    <div class="divider"></div>
 
     <!-- //###################################################################################################### -->
 
@@ -211,7 +74,7 @@
     <h1 style="text-align:left;" id="sinfonica">Percusión sinfónica</h1>
 
     <div class="horizontal-section">
-      <p style="margin-right: 10px; font-size: 14px; text-align: justify;">Me gradué de Música con Concentración en Estudios Instrumentales en Percusión, he sido percusionista de las principales orquestas sinfónicas de Costa Rica y he participado en otras fuera del país. He sido percusionista de bandas sinfónicas, ensambles de percusión y otras agrupaciones de cámara, interpretando repertorios que van desde lo clásico hasta lo contemporáneo.</p>
+      <p style="margin-right: 10px; font-size: 15px; text-align: justify;">Me gradué de Música con Concentración en Estudios Instrumentales en Percusión, he sido percusionista de las principales orquestas sinfónicas de Costa Rica y he participado en otras fuera del país. He sido percusionista de bandas sinfónicas, ensambles de percusión y otras agrupaciones de cámara, interpretando repertorios que van desde lo clásico hasta lo contemporáneo.</p>
 
     <!-- Banner de Percusión sinfónica -->
 
@@ -271,8 +134,8 @@
       setInterval(changeImagePS, 2000);
     </script>
 
-    <!-- Bloque o línea para dividir -->
-    <div style="width: 100%; height: 5px; background-color:var(--secondary-color); margin-top: 20px; margin-bottom: 20px;"></div>
+    <!-- Línea divisora con bordes redondeados -->
+    <div class="divider"></div>
 
     <!-- //###################################################################################################### -->
 
@@ -305,7 +168,7 @@
           <img src="../Images/PP/PP_3.jpg" alt="Imagen a la izquierda">
         </div>
       </div>
-      <p style="margin-left: 10px; text-align: justify; font-size: 14px;">He integrado agrupaciones de música tradicional de Costa Rica con las que he representado al país en distintos lugares de América, Europa y Asia, tocando marimba, batería, congas o bongó. Integré un trío de música popular brasileña (MPB) con el que me especialicé en pandeiro y batería para samba y bossa nova. Estudié batería para jazz, rock y ritmos latinos y he tocado para grupos de Ska, reggae y música latina como salsa, timba, merengue, cumbia y otros géneros.</p>
+      <p style="margin-left: 10px; text-align: justify; font-size: 15px;">He integrado agrupaciones de música tradicional de Costa Rica con las que he representado al país en distintos lugares de América, Europa y Asia, tocando marimba, batería, congas o bongó. Integré un trío de música popular brasileña (MPB) con el que me especialicé en pandeiro y batería para samba y bossa nova. Estudié batería para jazz, rock y ritmos latinos y he tocado para grupos de Ska, reggae y música latina como salsa, timba, merengue, cumbia y otros géneros.</p>
     </div>
 
     <script>
@@ -333,8 +196,8 @@
       setInterval(changeImagePP, 2000);
     </script>
 
-    <!-- Bloque o línea para dividir -->
-    <div style="width: 100%; height: 5px; background-color:var(--secondary-color); margin-top: 20px; margin-bottom: 20px;"></div>
+    <!-- Línea divisora con bordes redondeados -->
+    <div class="divider"></div>
 
     <!-- //###################################################################################################### -->
 
@@ -390,8 +253,8 @@
       setInterval(changeImageAC, 3000);
     </script>
 
-    <!-- Bloque o línea para dividir -->
-    <div style="width: 100%; height: 5px; background-color:var(--secondary-color); margin-top: 20px; margin-bottom: 20px;"></div>
+    <!-- Línea divisora con bordes redondeados -->
+    <div class="divider"></div>
 
     <!-- //###################################################################################################### -->
 
@@ -446,8 +309,8 @@
       setInterval(changeImageDP, 2000);
     </script>
 
-    <!-- Bloque o línea para dividir -->
-    <div style="width: 100%; height: 5px; background-color:var(--secondary-color); margin-top: 20px; margin-bottom: 20px;"></div>
+    <!-- Línea divisora con bordes redondeados -->
+    <div class="divider"></div>
 
     <!-- //###################################################################################################### -->
 
@@ -497,13 +360,9 @@
       setInterval(changeImagePM, 2000);
     </script>
 
-    <!-- Bloque o línea para dividir -->
-    <div style="width: 100%; height: 5px; background-color:var(--secondary-color); margin-top: 20px; margin-bottom: 20px;"></div>
+    <!-- Línea divisora con bordes redondeados -->
+    <div class="divider"></div>
 
   </div>
 </body>
 </html>
-
-<!-- Ícono a cada apartado en menú -->
-
-
