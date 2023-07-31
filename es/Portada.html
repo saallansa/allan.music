@@ -2,8 +2,202 @@
 <html>
 <head>
   <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../Config/styles.css">
+  <!-- <link rel="stylesheet" href="../Config/styles.css"> -->
   <title>Allan Vega</title>
+    <style>
+    :root {
+      --primary-color: #FFFFFF;
+      --secondary-color: #F6D55C;
+      --accent-color: #E63946;
+      --background-color: #000000;
+      --optional-color: #A8DADC;
+
+--primary-color: #324653;
+--secondary-color: #4A6378;
+--accent-color: #FF8000;
+--background-color: #F0F0F0;
+--optional-color: #CCCCCC;
+
+--primary-color: #FFFFFF;
+--secondary-color: #FAFAFA;
+--accent-color: #FF8000;
+--background-color: #000000;
+--optional-color: #CCCCCC;
+
+  --primary-color: #89C2D9; /* Cambia el valor a un azul más claro */
+  --secondary-color: #F6D55C;
+  --accent-color: #E63946;
+  --background-color: #000000;
+  --optional-color: #A8DADC;
+
+  --primary-color: #666666;
+--secondary-color: #CCCCCC;
+--accent-color: #FF8000;
+--background-color: #FFFFFF;
+--optional-color: #000000;
+
+--primary-color: #333333;
+--secondary-color: #666666;
+--accent-color: #FFFFFF;
+--background-color: #000000;
+--optional-color: #CCCCCC;
+
+--primary-color: #444444;
+--secondary-color: #CCCCCC;
+--accent-color: #FFFFFF;
+--background-color: #000000;
+--optional-color: #666666;
+
+--primary-color: #2E2E2E;
+--secondary-color: #CCCCCC;
+--accent-color: #FFFFFF;
+--background-color: #000000;
+--optional-color: #666666;
+
+--primary-color: #1E1E1E;
+--secondary-color: #CCCCCC;
+--accent-color: #FFFFFF;
+--background-color: #000000;
+--optional-color: #666666;
+
+      --primary-color: #CCCCCC; /* Gris claro */
+      --secondary-color: #CCCCCC;
+      --accent-color: #FFFFFF;
+      --background-color: #000000;
+      --optional-color: #666666;
+
+      --primary-color: #CCCCCC; /* Gris claro */
+      --secondary-color: #CCCCCC;
+      --accent-color: #FFFFFF;
+      --background-color: #000000;
+      --optional-color: #666666;
+
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--background-color);
+    }
+    /*2# Paleta*/
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column; /* Los elementos hijos se colocarán uno debajo del otro */
+    }
+    .logo {
+      width: 200px;
+      height: auto;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0 auto;
+      padding: 0;
+    }
+    .nav ul li {
+      margin-left: 20px;
+    }
+    .nav ul li a {
+      text-decoration: none;
+      color: var(--primary-color);
+      font-weight: bold;
+    }
+    .nav ul li a:hover {
+      color: var(--accent-color);
+    }
+    #banner {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #banner img {
+      width: auto;
+      height: 100%;
+    }
+    .content {
+      margin-top: 20px;
+    }
+    .content h1 {
+      color: var(--primary-color);
+/*      color: #000000;*/
+      font-size: 32px;
+    }
+    .content p {
+      color: var(--primary-color);
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    .horizontal-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .horizontal-section img {
+      max-width: 40%;
+      height: auto;
+    }
+    .horizontal-section p {
+      line-height: 2.5; /* Ajustar este valor según tus necesidades */
+      flex: 1; /* Para que el párrafo ocupe el espacio restante */
+      color: var(--primary-color);
+    }
+    #bannerPS,
+    #bannerPP,
+    #bannerAC,
+    #bannerDP,
+    #bannerPM {
+      flex: 1; /* Para que el banner ocupe el espacio restante */
+      display: flex;
+      justify-content: space-between;
+      max-width: 40%;
+    }
+    /* Estilos para las imágenes dentro del banner */
+    .banner-image {
+      max-height: 200px; /* Ajustar la altura máxima deseada */
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .banner-image img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+    }
+    .icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .icon i {
+      margin-bottom: 5px; /* Ajusta este valor para cambiar la separación entre el ícono y el texto */
+      color: var(--primary-color);
+    }
+    /* Estilos para la línea separadora con bordes redondeados */
+    .divider {
+      width: 100%;
+      height: 5px;
+      background-color: var(--primary-color);
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px; /* Ajusta este valor para controlar el radio de los bordes redondeados */
+    }
+    h1 {
+      color: var(--primary-color);
+    }
+  </style>
+
 </head>
 <body>
   <div class="container">
@@ -11,7 +205,8 @@
     <!-- Encabezado     -->
     <div class="nav">
       <!-- <img src="Images/foto.jpg" alt="Logo" class="logo"> -->
-      <p style="text-align:center; font-size:38px; color:var(--primary-color);font-family: Arial, serif;font-weight: Bold;">Allan Vega</p>
+      <p style="text-align:center; font-size:38px; color: var(--primary-color);font-family: Arial, serif;font-weight: Bold;">Allan Vega</p>
+      <!-- <p style="text-align:center; font-size:38px; color:var(--primary-color);font-family: Arial, serif;font-weight: Bold;">Allan Vega</p> -->
       <ul>
         <li><a href="#sinfonica"><span class="icon"><i class="fas fa-drum"></i></span><span style="display: inline-block; text-align: center;">Percusión<br>Sinfónica</span></a></li>
         <li><a href="#popular"><span class="icon"><i class="fa-solid fa-headphones"></i></span><span style="display: inline-block; text-align: center;">Percusión<br>Popular</span></a></li>
@@ -61,7 +256,7 @@
     </script>
 
     <div class="content">
-      <h1 style="text-align: center;">¡Hola!</h1>
+      <h1 style="text-align: center; color: var(--primary-color);">¡Hola!</h1>
       <p style="text-align: center;">¡Gracias por visitar mi página web!<br><br>Te comparto un poco de mi trayectoria musical a través de las siguientes secciones.</p>
     </div>
 
