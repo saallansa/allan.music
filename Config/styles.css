@@ -1,29 +1,21 @@
 <style>
   :root {
-    --primary-color: #2E86AB;      /* Azul profundo */
-    --secondary-color: #F6D55C;    /* Amarillo mostaza */
-    --accent-color: #E63946;       /* Rojo coral */
-    --background-color: #F1FAEE;   /* Blanco verdoso */
-    --optional-color: #A8DADC;     /* Verde turquesa (opcional) */
+    --primary-color: #D1D1D1; /* Gris claro */
+    --secondary-color: #CCCCCC;
+    --accent-color: #FFFFFF;
+    --background-color: #000000;
+    --optional-color: #666666;
   }
   body {
     font-family: Arial, sans-serif;
     background-color: var(--background-color);
   }
-  /*2# Paleta*/
   .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     display: flex;
     flex-direction: column; /* Los elementos hijos se colocarán uno debajo del otro */
-  }
-  /* Estilos para dispositivos móviles con ancho de pantalla menor o igual a 768px (puedes ajustar el valor según tus necesidades) */
-  @media screen and (max-width: 768px) {
-    /* Cambiar la dirección del contenedor a columna para que los elementos se apilen verticalmente */
-    .container {
-      flex-direction: column;
-    }
   }
   .logo {
     width: 200px;
@@ -88,6 +80,7 @@
   .horizontal-section p {
     line-height: 2.5; /* Ajustar este valor según tus necesidades */
     flex: 1; /* Para que el párrafo ocupe el espacio restante */
+    color: var(--primary-color);
   }
   #bannerPS,
   #bannerPP,
@@ -120,15 +113,57 @@
   }
   .icon i {
     margin-bottom: 5px; /* Ajusta este valor para cambiar la separación entre el ícono y el texto */
-    color: var(--secondary-color);
+    color: var(--primary-color);
   }
   /* Estilos para la línea separadora con bordes redondeados */
   .divider {
     width: 100%;
     height: 5px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 5px; /* Ajusta este valor para controlar el radio de los bordes redondeados */
+  }
+  h1 {
+    color: var(--primary-color);
+  }
+  /* Estilos para el pie de página */
+  footer {
+    text-align: center; /* Centra el contenido del pie de página */
+    color: var(--primary-color); /* Utiliza el mismo color primario definido en :root */
+    margin-top: 0px; /* Espacio entre el contenido y el pie de página */
+    /* Añade la propiedad justify-content para centrar los elementos horizontalmente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  footer h1 {
+    color: var(--primary-color); /* Utiliza el mismo color primario definido en :root */
+  }
+
+  footer p {
+    margin: 5px 0; /* Espacio entre cada párrafo */
+    display: block; /* Crea un diseño en bloque */
+  }
+
+  footer .icon {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+    font-size: 18px; /* Tamaño del ícono */
+  }
+
+  footer a {
+    color: var(--primary-color); /* Establece el color de enlace igual al color primario */
+    text-decoration: none; /* Quita el subrayado del enlace */
+  }
+
+  footer a:hover {
+    color: var(--accent-color); /* Cambia el color al pasar el cursor sobre el enlace */
+  }
+
+  /* Estilos para la alineación de ícono y número de teléfono */
+  footer .in_line {
+    display: flex; /* Crea un diseño en línea (flexbox) */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
   }
 </style>
