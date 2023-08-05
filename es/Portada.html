@@ -47,37 +47,49 @@
     <div id="banner">
       <!-- <img src="../Images/PS/PS_3.jpg" alt="Imagen A"> -->
       <img src="../Images/PS/PS_5.jpg" alt="Imagen B">
-      <img src="../Images/PS/PS_4.jpg" alt="Imagen C">
       <img src="../Images/PP/PP_6.jpg" alt="Imagen F">
+      <img src="../Images/PS/PS_4.jpg" alt="Imagen C">
       <img src="../Images/PS/PS_6.jpg" alt="Imagen D">
       <img src="../Images/PS/PS_10.jpg" alt="Imagen E">
 
     </div>
 
-    <script>
-      // Obtener el elemento con el id "banner"
-      var banner = document.getElementById("banner");
-      // Obtener las imágenes dentro del banner
-      var images = banner.getElementsByTagName("img");
-      // Establecer un índice para indicar qué imagen se muestra
-      var index = 0;
-      // Establecer una función para cambiar la imagen cada 3 segundos
-      function changeImage() {
-        // Ocultar todas las imágenes
-        for (var i = 0; i < images.length; i++) {
-          images[i].style.display = "none";
-        }
-        // Mostrar la imagen correspondiente al índice
-        images[index].style.display = "block";
-        // Incrementar el índice o volver a cero si llega al final
-        index++;
-        if (index == images.length) {
-          index = 0;
-        }
-      }
-      //Tiempo para el cambio de imágenes en ms
-      setInterval(changeImage, 2000);
-    </script>
+<script>
+  // Obtener el elemento con el id "banner"
+  var banner = document.getElementById("banner");
+  // Obtener las imágenes dentro del banner
+  var images = banner.getElementsByTagName("img");
+  // Establecer un índice para indicar qué imagen se muestra
+  var index = 0;
+
+  // Función para ocultar todas las imágenes excepto la primera
+  function hideImages() {
+    for (var i = 1; i < images.length; i++) {
+      images[i].style.display = "none";
+    }
+  }
+
+  // Función para cambiar la imagen cada 3 segundos
+  function changeImage() {
+    // Ocultar todas las imágenes
+    for (var i = 0; i < images.length; i++) {
+      images[i].style.display = "none";
+    }
+    // Mostrar la imagen correspondiente al índice
+    images[index].style.display = "block";
+    // Incrementar el índice o volver a cero si llega al final
+    index++;
+    if (index == images.length) {
+      index = 0;
+    }
+  }
+
+  // Ocultar todas las imágenes excepto la primera al cargar la página
+  hideImages();
+
+  // Llamar a la función changeImage cada 3 segundos
+  setInterval(changeImage, 3000);
+</script>
 
     <div class="content">
       <h1 style="text-align: center; color: var(--primary-color);">¡Hola!</h1>
@@ -98,12 +110,6 @@
     <!-- Banner de Percusión sinfónica -->
 
       <div id="bannerPS">
-<!--    <div class="banner-image">
-          <img src="../Images/PS/PS_1.jpg" alt="Imagen a la derecha">
-        </div>
-        <div class="banner-image">
-          <img src="../Images/PS/PS_2.jpg" alt="Imagen a la derecha">
-        </div> -->
         <div class="banner-image">
           <img src="../Images/PS/PS_24.jpg" alt="Imagen a la derecha">
         </div>
@@ -135,6 +141,14 @@
       var imagesPS = bannerPS.getElementsByTagName("img");
       // Establecer un índice para indicar qué imagen se muestra
       var indexPS = 0;
+
+      // Función para ocultar todas las imágenes excepto la primera
+      function hideImagesPS() {
+        for (var i = 1; i < imagesPS.length; i++) {
+          imagesPS[i].style.display = "none";
+        }
+      }
+
       // Establecer una función para cambiar la imagen cada 3 segundos
       function changeImagePS() {
         // Ocultar todas las imágenes
@@ -149,8 +163,12 @@
           indexPS = 0;
         }
       }
+
+    // Ocultar todas las imágenes excepto la primera al cargar la página
+    hideImagesPS();
+
       // Llamar a la función cada 3 segundos
-      setInterval(changeImagePS, 2000);
+      setInterval(changeImagePS, 3000);
     </script>
 
     <!-- Línea divisora con bordes redondeados -->
@@ -166,10 +184,10 @@
     <div class="horizontal-section">
       <div id="bannerPP">
         <div class="banner-image">
-          <img src="../Images/PP/PP_2.jpg" alt="Imagen a la izquierda">
+          <img src="../Images/PP/PP_8.jpg" alt="Imagen a la izquierda">
         </div>
         <div class="banner-image">
-          <img src="../Images/PP/PP_8.jpg" alt="Imagen a la izquierda">
+          <img src="../Images/PP/PP_9.jpg" alt="Imagen a la izquierda">
         </div>
         <div class="banner-image">
           <img src="../Images/PP/PP_1.jpg" alt="Imagen a la izquierda">
@@ -181,10 +199,10 @@
           <img src="../Images/PP/PP_7.jpg" alt="Imagen a la izquierda">
         </div>
         <div class="banner-image">
-          <img src="../Images/PP/PP_9.jpg" alt="Imagen a la izquierda">
+          <img src="../Images/PP/PP_3.jpg" alt="Imagen a la izquierda">
         </div>
         <div class="banner-image">
-          <img src="../Images/PP/PP_3.jpg" alt="Imagen a la izquierda">
+          <img src="../Images/PP/PP_2.jpg" alt="Imagen a la izquierda">
         </div>
       </div>
       <p style="margin-left: 10px; text-align: justify; font-size: 15px;">He integrado agrupaciones de música tradicional de Costa Rica con las que he representado al país en distintos lugares de América, Europa y Asia, tocando marimba, batería, congas o bongó. Integré un trío de música popular brasileña (MPB) con el que me especialicé en pandeiro y batería para samba y bossa nova. Estudié batería para jazz, rock y ritmos latinos y he tocado para grupos de Ska, reggae y música latina como salsa, timba, merengue, cumbia y otros géneros.</p>
@@ -197,6 +215,14 @@
       var imagesPP = bannerPP.getElementsByTagName("img");
       // Establecer un índice para indicar qué imagen se muestra
       var indexPP = 0;
+
+      // Función para ocultar todas las imágenes excepto la primera
+      function hideImagesPP() {
+        for (var i = 1; i < imagesPP.length; i++) {
+          imagesPP[i].style.display = "none";
+        }
+      }
+
       // Establecer una función para cambiar la imagen cada 3 segundos
       function changeImagePP() {
         // Ocultar todas las imágenes
@@ -211,8 +237,12 @@
           indexPP = 0;
         }
       }
+
+    // Ocultar todas las imágenes excepto la primera al cargar la página
+    hideImagesPP();
+
       // Llamar a la función cada 3 segundos
-      setInterval(changeImagePP, 2000);
+      setInterval(changeImagePP, 3000);
     </script>
 
     <!-- Línea divisora con bordes redondeados -->
@@ -241,9 +271,6 @@
         <div class="banner-image">
           <img src="../Images/AC/AC_8.jpg" alt="Imagen a la derecha">
         </div>
-<!--         <div class="banner-image">
-          <img src="../Images/AC/AC_7.jpg" alt="Imagen a la derecha">
-        </div> -->
       </div>
     </div>
 
@@ -254,6 +281,14 @@
       var imagesAC = bannerAC.getElementsByTagName("img");
       // Establecer un índice para indicar qué imagen se muestra
       var indexAC = 0;
+
+      // Función para ocultar todas las imágenes excepto la primera
+      function hideImagesAC() {
+        for (var i = 1; i < imagesAC.length; i++) {
+          imagesAC[i].style.display = "none";
+        }
+      }
+
       // Establecer una función para cambiar la imagen cada 3 segundos
       function changeImageAC() {
         // Ocultar todas las imágenes
@@ -268,6 +303,10 @@
           indexAC = 0;
         }
       }
+
+      // Ocultar todas las imágenes excepto la primera al cargar la página
+      hideImagesAC();
+
       // Llamar a la función cada 3 segundos
       setInterval(changeImageAC, 3000);
     </script>
@@ -300,7 +339,7 @@
           <img src="../Images/DP/DP_1.jpg" alt="Imagen a la izquierda">
         </div>
       </div>
-      <p style="margin-left: 10px; text-align: justify;">Me gradué de Docencia en Música y trabajé como profesor de percusión sinfónica en el Conservatorio de Castella en Costa Rica. He impartido clases teóricas y prácticas de instrumentos de percusión y batería, así como clases de lectura, armonía y otras areas del lenguaje musical.</p>
+      <p style="margin-left: 10px; text-align: justify;">Me gradué de Docencia en Música y trabajé como profesor de percusión sinfónica en un conservatorio en Costa Rica. He impartido clases teóricas y prácticas de instrumentos de percusión y batería, así como clases de lectura, armonía y otras areas del lenguaje musical.</p>
     </div>
 
     <script>
@@ -310,6 +349,14 @@
       var imagesDP = bannerDP.getElementsByTagName("img");
       // Establecer un índice para indicar qué imagen se muestra
       var indexDP = 0;
+
+      // Función para ocultar todas las imágenes excepto la primera
+      function hideImagesDP() {
+        for (var i = 1; i < imagesDP.length; i++) {
+          imagesDP[i].style.display = "none";
+        }
+      }
+
       // Establecer una función para cambiar la imagen cada 3 segundos
       function changeImageDP() {
         // Ocultar todas las imágenes
@@ -324,8 +371,12 @@
           indexDP = 0;
         }
       }
+
+      // Ocultar todas las imágenes excepto la primera al cargar la página
+      hideImagesDP();
+
       // Llamar a la función cada 3 segundos
-      setInterval(changeImageDP, 2000);
+      setInterval(changeImageDP, 3000);
     </script>
 
     <!-- Línea divisora con bordes redondeados -->
@@ -337,7 +388,7 @@
     <h1 style="text-align:left;" id="produccion">Producción musical <span style="font-size: 0.6em;">(Proyecto actual)</span></h1>
 
     <div class="horizontal-section">
-      <p style="margin-right: 10px; text-align: justify;">Desde el 2022 estudio una maestría en producción musical que incluye música electrónica y urbana, escritura de canciones, composición de música para cine y composición e implementación de música para videojuegos.</p>
+      <p style="margin-right: 10px; text-align: justify;">Desde el 2022 estudio una maestría en producción musical que incluye música electrónica y urbana, composición de música para cine, composición e implementación de música para videojuegos y escritura de canciones, con prácticas en areas como el diseño sonoro, grabación, mezcla y masterización de audio.</p>
 
     <!-- Banner de Producción musical -->
 
@@ -361,6 +412,14 @@
       var imagesPM = bannerPM.getElementsByTagName("img");
       // Establecer un índice para indicar qué imagen se muestra
       var indexPM = 0;
+
+      // Función para ocultar todas las imágenes excepto la primera
+      function hideImagesPM() {
+        for (var i = 1; i < imagesPM.length; i++) {
+          imagesPM[i].style.display = "none";
+        }
+      }
+
       // Establecer una función para cambiar la imagen cada 3 segundos
       function changeImagePM() {
         // Ocultar todas las imágenes
@@ -375,8 +434,12 @@
           indexPM = 0;
         }
       }
+
+      // Ocultar todas las imágenes excepto la primera al cargar la página
+      hideImagesPM();
+
       // Llamar a la función cada 3 segundos
-      setInterval(changeImagePM, 2000);
+      setInterval(changeImagePM, 3000);
     </script>
 
     <!-- Línea divisora con bordes redondeados -->
