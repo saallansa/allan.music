@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Config/styles.css">
+    <title>Allan Vega</title>
+    <style>
+      :root {
+        --primary-color: #D1D1D1; /* Gris claro */
+        --secondary-color: #CCCCCC;
+        --accent-color: #FFD700; /* Amarillo */
+        --background-color: #000000;
+        --optional-color: #666666;
+        --play-color: #008000; /* Verde 1 */
+        --blue-links: #007bff; /* Azul para links*/
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Banderas de idiomas -->
+    <div class="container">
+      <div style="display: flex; justify-content: flex-end; padding: 10px;">
+      <!-- Bandera de Inglaterra -->
+    <a href="../es/Produccion_Musical.html">
+      <img src="../Config/ES.svg" alt="Bandera de España" style="width: 30px; height: auto; margin-right: 10px; border: 1px solid white;">
+      </a>
+      <!-- Bandera de Alemania -->
+      <a href="../de/Musikproduktion.html">
+        <img src="../Config/DE.svg" alt="Bandera de Alemania" style="width: 30px; height: auto; margin-right: 10px; border: 1px solid white;">
+      </a>
+    </div>
+
+    <!-- Títulos de Encabezado -->
+    <div class="nav">
+      <a href="Home.html#" style="text-decoration: none;">
+        <h1 class="accent-hover" style="text-align: center; font-size: 38px; font-family: Arial, serif; font-weight: bold;">
+          <span>Allan Vega</span>
+        </h1>
+      </a>
+      <ul>
+        <li><a href="Home.html#sinfonica"><span class="icon"><i class="fas fa-drum"></i></span><span style="display: inline-block; text-align: center;">Symphonic<br>Percussion</span></a></li>
+        <li><a href="Home.html#popular"><span class="icon"><i class="fa-solid fa-headphones"></i></span><span style="display: inline-block; text-align: center;">Popular<br>Percussion</span></a></li>
+        <li><a href="Home.html#arreglos"><span class="icon"><i class="fa-solid fa-music"></i></span><span style="display: inline-block; text-align: center;">Arrangements &<br>Composition</span></a></li>
+        <li><a href="Home.html#docencia"><span class="icon"><i class="fa-solid fa-chalkboard-user"></i></i></span><span style="display: inline-block; text-align: center;">Teaching &<br>Pedagogy</span></a></li>
+        <li><a href="Home.html#produccion"><span class="icon"><i class="fa-solid fa-sliders"></i></span><span style="display: inline-block; text-align: center;">Music<br>Production<br><span style="font-size: 0.8em;">(Current Project)</span></span></a></li>
+      </ul>
+    </div>
+      
+    <!-- Línea divisora con bordes redondeados -->
+    <div class="divider"></div>
+
+    <!-- Banner del encabezado -->
+    <div id="banner">
+      
+      <img src="../Config/MP/Header/2_C.jpg" alt="Imagen de collage 3">
+      <img src="../Config/MP/Header/1_C.jpg" alt="Imagen de collage 2">
+      <img src="../Config/MP/Header/3_C.jpg" alt="Imagen de collage 4">
+      <img src="../Config/MP/Header/0_C.jpg" alt="Imagen de collage 1">
+
+    </div>
+    <script>
+      // Obtener el elemento con el id "banner"
+      var banner = document.getElementById("banner");
+      // Obtener las imágenes dentro del banner
+      var images = banner.getElementsByTagName("img");
+      // Establecer un índice para indicar qué imagen se muestra
+      var index = 0;
+
+      // Función para ocultar todas las imágenes excepto la primera
+      function hideImages() {
+        for (var i = 1; i < images.length; i++) {
+          images[i].style.display = "none";
+        }
+      }
+
+      // Función para cambiar la imagen cada 3 segundos
+      function changeImage() {
+        // Ocultar todas las imágenes
+        for (var i = 0; i < images.length; i++) {
+          images[i].style.display = "none";
+        }
+        // Mostrar la imagen correspondiente al índice
+        images[index].style.display = "block";
+        // Incrementar el índice o volver a cero si llega al final
+        index++;
+        if (index == images.length) {
+          index = 0;
+        }
+      }
+
+      // Ocultar todas las imágenes excepto la primera al cargar la página
+      hideImages();
+
+      // Llamar a la función changeImage cada 3 segundos
+      setInterval(changeImage, 3000);
+    </script>
+    
+    <!-- Texto del encabezado -->
+    <div class="content">
+      <h1 style="text-align: center; color: var(--primary-color);">Music Production</h1>
+      <p style="text-align: center;">The journey from imaginary to concrete. It is for me the art of materializing abstract sound ideas, combining creative and technical elements to give life to a complete musical work.<br>
+    </div>
+
+    <!-- Línea divisora con bordes redondeados -->
+    <div class="divider"></div>
+
+    <!-- //#########################################  Inicio de sección  ############################################################# -->
+
+    <!-- Título de sección -->
+    <h1 style="text-align:left;" id="MyM">Mixing and Mastering</h1>
+
+    <!-- Texto y banner de sección -->
+    <div class="horizontal-section">
+      <p style="margin-right: 10px; font-size: 15px; text-align: justify;">Imagine a psychoacoustic space where sound elements are cohesionen through concrete processes such as dynamic control (compressors, limiters, expanders, gates), frequency balance (subtractive, additive, static, dynamic, chain, saturator equalizers), spatiality control (reverb, delay, chorus, phaser, flanger modulators) and other optimization techniques for use in current devices of the music industry.</p>
+      <!-- Banner de sección -->
+      <div id="bannerPS">
+        <div class="banner-image">
+          <img src="../Config/MP/MyM/1_Mix_AI.jpg" alt="Imagen de mezcla 1">
+        </div>
+        <div class="banner-image">
+          <img src="../Config/MP/MyM/5_M.jpg" alt="Imagen de mezcla">
+        </div>
+        <div class="banner-image">
+          <img src="../Config/MP/MyM/2_EQ.jpg" alt="Imagen de EQ">
+        </div>
+        <div class="banner-image">
+          <img src="../Config/MP/MyM/4_L.jpg" alt="Imagen de L">
+        </div>
+        <div class="banner-image">
+          <img src="../Config/MP/MyM/0_E.jpg" alt="Imagen de espectro">
+        </div>
+        <div class="banner-image">
+          <img src="../Config/MP/MyM/3_TB.jpg" alt="Imagen de TB">
+        </div>
+      </div>
+    </div>
+    <script>
+      // Obtener el elemento con el id "bannerPS"
+      var bannerPS = document.getElementById("bannerPS");
+      // Obtener las imágenes dentro del bannerPS
+      var imagesPS = bannerPS.getElementsByTagName("img");
+      // Establecer un índice para indicar qué imagen se muestra
+      var indexPS = 0;
+      // Función para ocultar todas las imágenes excepto la primera
+      function hideImagesPS() {
+        for (var i = 1; i < imagesPS.length; i++) {
+          imagesPS[i].style.display = "none";
+        }
+      }
+      // Establecer una función para cambiar la imagen cada 3 segundos
+      function changeImagePS() {
+        // Ocultar todas las imágenes
+        for (var i = 0; i < imagesPS.length; i++) {
+          imagesPS[i].style.display = "none";
+        }
+        // Mostrar la imagen correspondiente al índice
+        imagesPS[indexPS].style.display = "block";
+        // Incrementar el índice o volver a cero si llega al final
+        indexPS++;
+        if (indexPS == imagesPS.length) {
+          indexPS = 0;
+        }
+      }
+      // Ocultar todas las imágenes excepto la primera al cargar la página
+      hideImagesPS();
+      // Llamar a la función cada 3 segundos
+      setInterval(changeImagePS, 3000);
+    </script>
+
+    <!-- Botones de Audio de sección-->
+    <div class="buttonContainer">
+      <button id="btnControl1" onclick="toggleControl1()">
+        <i class="fas fa-headphones"></i> Escuchar
+      </button>
+      <button id="btnAlternar1" onclick="toggleAudio1()">
+        <i class="fa-solid fa-sliders"></i> Comparar
+      </button>
+      <div class="tooltip">
+        <button id="btnPequeño1">
+          <i class="fas fa-info-circle" id="infoIcon1"></i>
+        </button>
+        <span class="tooltiptext" id="myTooltip1">
+          <p>Remixing and remastering of the 70-track song <em>Siren</em> by <em>Georgia Wonder</em>.</p>
+          <p>Processing: Correction of artifacts, control of wheezing, coloring, spatiality, frequency balance and maximization.</p>
+          <p>Tools: Equalizers, gates, static and dynamic compressors, panoramas, distorters, reverbs, delays and limiters.</p>
+          <p>Controls:</p>
+          <p><i class="fas fa-headphones" style="color: var(--play-color);"></i> Press "listen" to start or stop audio playback.</p>
+          <p><i class="fa-solid fa-sliders" style="color: var(--play-color);"></i> Press "compare" to turn on or off audio processing.</p>
+          <p><i class="fas fa-info-circle" style="color: var(--play-color);"></i> Press the info icon to open or close the audio description.</p>
+        </span>
+      </div>
+    </div>
+      <audio id="audio1" src="../Config/MP/MyM/0_Mezcla_y_Master.wav"></audio>
+      <audio id="audio2" src="../Config/MP/MyM/1_Mezcla_y_Master.wav"></audio>
+
+    <script>
+      let currentAudio1 = 'audio1'; // Audio que se reproduce actualmente
+      let previousAudio1 = ''; // Audio que se reproducia antes de alternar
+      let isPlaying1 = false; // Estado de reproducción (true: reproduciendo, false: pausado)
+
+      function toggleControl1() {
+
+        const audio = document.getElementById(currentAudio1);
+        const button = document.getElementById('btnControl1'); // Selecciona el botón
+        const icon = button.querySelector('i'); // Selecciona el ícono
+        const buttonAlternar = document.getElementById('btnAlternar1');
+        const iconAlternar = buttonAlternar.querySelector('i');
+
+        // Detener el audio del segundo par de botones
+          const audio2 = document.getElementById(currentAudio2);
+          audio2.pause();
+          isPlaying2 = false;
+          const button2 = document.getElementById('btnControl2');
+          const icon2 = button2.querySelector('i');
+          button2.textContent = '';
+          button2.appendChild(icon2);
+          button2.append(' Escuchar');
+          icon2.classList.remove('reproduciendo');
+
+        // Desactivar el ícono del botón "Comparar" del segundo par
+          const buttonAlternar2 = document.getElementById('btnAlternar2');
+          const iconAlternar2 = buttonAlternar2.querySelector('i');
+          iconAlternar2.classList.remove('comparando');
+
+        // Asegurarse de que la próxima vez que se presione el botón del segundo par, se reproduzca audio3
+         currentAudio2 = 'audio3';
+
+        // Detener el audio del tercer par de botones
+          const audio3 = document.getElementById(currentAudio3);
+          audio3.pause();
+          isPlaying3 = false;
+          const button3 = document.getElementById('btnControl3');
+          const icon3 = button3.querySelector('i');
+          button3.textContent = '';
+          button3.appendChild(icon3);
+          button3.append(' Escuchar');
+          icon3.classList.remove('reproduciendo');
+
+        // Desactivar el ícono del botón "Comparar" del tercer par
+          const buttonAlternar3 = document.getElementById('btnAlternar3');
+          const iconAlternar3 = buttonAlternar3.querySelector('i');
+          iconAlternar3.classList.remove('comparando');
+
+        // Asegurarse de que la próxima vez que se presione el botón del tercer par, se reproduzca audio5
+          currentAudio3 = 'audio5';
+
+          if (isPlaying1) {
+            audio.pause();
+            isPlaying1 = false;
+            button.textContent = '';
+            button.appendChild(icon);
+            button.append(' Escuchar'); //Reproducir
+            icon.classList.remove('reproduciendo');
+          } else {
+            // Nuevo comportamiento cuando ambos botones están apagados
+            if (currentAudio1 === 'audio1' && !iconAlternar.classList.contains('comparando')) {
+              currentAudio1 = 'audio2';
+              audio.pause();
+              const nuevoAudio = document.getElementById('audio2');
+              nuevoAudio.play();
+              iconAlternar.classList.add('comparando');
+          } else {
+            audio.play();
+          }
+          isPlaying1 = true;
+          button.textContent = '';
+          button.appendChild(icon);
+          button.append(' Escuchar'); //Pausar
+          icon.classList.add('reproduciendo');
+        }
+      }
+      function toggleAudio1() {
+        const audioActual = document.getElementById(currentAudio1);
+        const nuevoAudio = document.getElementById(currentAudio1 === 'audio1' ? 'audio2' : 'audio1');
+        const button = document.getElementById('btnControl1'); // Selecciona el botón escuchar
+        const icon = button.querySelector('i'); // Selecciona el ícono del botón escuchar
+        const buttonAlternar = document.getElementById('btnAlternar1'); // Selecciona el botón "Comparar"
+        const iconAlternar = buttonAlternar.querySelector('i'); // Selecciona el ícono del botón "Comparar"
+
+        // Detener el audio del segundo par de botones
+          const audio2 = document.getElementById(currentAudio2);
+          audio2.pause();
+          isPlaying2 = false;
+          const button2 = document.getElementById('btnControl2');
+          const icon2 = button2.querySelector('i');
+          button2.textContent = '';
+          button2.appendChild(icon2);
+          button2.append(' Escuchar');
+          icon2.classList.remove('reproduciendo');
+
+        // Desactivar el ícono del botón "Comparar" del segundo par
+          const buttonAlternar2 = document.getElementById('btnAlternar2');
+          const iconAlternar2 = buttonAlternar2.querySelector('i');
+          iconAlternar2.classList.remove('comparando');
+
+        // Asegurarse de que la próxima vez que se presione el botón del segundo par, se reproduzca audio3
+         currentAudio2 = 'audio3';
+
+        // Detener el audio del tercer par de botones
+          const audio3 = document.getElementById(currentAudio3);
+          audio3.pause();
+          isPlaying3 = false;
+          const button3 = document.getElementById('btnControl3');
+          const icon3 = button3.querySelector('i');
+          button3.textContent = '';
+          button3.appendChild(icon3);
+          button3.append(' Escuchar');
+          icon3.classList.remove('reproduciendo');
+
+        // Desactivar el ícono del botón "Comparar" del tercer par
+          const buttonAlternar3 = document.getElementById('btnAlternar3');
+          const iconAlternar3 = buttonAlternar3.querySelector('i');
+          iconAlternar3.classList.remove('comparando');
+
+        // Asegurarse de que la próxima vez que se presione el botón del tercer par, se reproduzca audio5
+          currentAudio3 = 'audio5';
+
+        if (isPlaying1) {
+          previousAudio1 = currentAudio1;
+          audioActual.pause();
+        }
+        currentAudio1 = nuevoAudio.id;
+        nuevoAudio.currentTime = audioActual.currentTime; // Reanudar desde la posición actual
+        nuevoAudio.play();
+        isPlaying1 = true;
+        icon.classList.add('reproduciendo'); // Add the "playing" class
+        // Cambia el color del  del botón alternar cuando se reproduce el audio 2
+        if (currentAudio1 === 'audio2') {
+          iconAlternar.classList.add('comparando'); // Agrega la clase específica para el audio2
+        } else {
+          iconAlternar.classList.remove('comparando'); // Elimina la clase específica para el audio2
+        }
+      }
+
+      // Función para manejar el clic en el botón pequeño o su ícono
+      function handleSmallButtonClick1(event) {
+          event.stopPropagation(); // Evita que el clic se propague al documento
+          var tooltip = document.getElementById("myTooltip1");
+          var icon = document.getElementById("infoIcon1");
+          tooltip.classList.toggle("show");
+          icon.classList.toggle("active");
+          }
+
+      // Asignar el manejador de eventos al botón pequeño
+      document.getElementById("btnPequeño1").addEventListener("click", handleSmallButtonClick1);
+
+      // Cerrar el tooltip si se hace clic fuera de él
+      document.addEventListener("click", function(event) {
+          var tooltip = document.getElementById("myTooltip1");
+          var btnPequeño = document.getElementById("btnPequeño1");
+          var icon = document.getElementById("infoIcon1");
+          if (!btnPequeño.contains(event.target) && tooltip.classList.contains('show')) {
+              tooltip.classList.remove('show');
+              icon.classList.remove('active');}
+        });
+    </script>
+
+
+    <!-- Línea divisora con bordes redondeados -->
+    <div class="divider"></div>
+
+    <!-- //#########################################  Inicio de sección  ############################################################# -->
+
+    <!-- Título de sección -->
+    <h1 style="text-align:left;" id="popular">Audio Restoration and Treatment</h1>
+
+    <!-- Texto y banner de sección -->
+    <div class="horizontal-section">
+      <div id="bannerPP">
+        <div class="banner-image">
+          <img src="../Config/MP/RyT/4_JB.jpg" alt="Imagen de JB">
+        </div>
+        <div class="banner-image">
+          <img src="../Config/MP/RyT/0_Rx.jpg" alt="Imagen de Rx">
+        </div>
+        <div class="banner-image">
+          <img src="../Config/MP/RyT/1_EQ.jpg" alt="Imagen de EQ">
+        </div>
+        <div class="banner-image">
+          <img src="../Config/MP/RyT/2_P.jpg" alt="Imagen de Phaser">
+        </div>
+        <div class="banner-image">
+          <img src="../Config/MP/RyT/3_Rx.jpg" alt="Imagen de Rx">
+        </div>
+      </div>
+      <p style="margin-left: 10px; text-align: justify; font-size: 15px;">Meticulously intervene on a deteriorated or imperfect content with specific techniques such as frequency restoration (forensic equalization, spectrogram editing), clarity optimization (de-noise, de-essing, de-clicking, de-crackling), distortion removal (de-clipping, de-warping), the reconstruction of stereo image (mid-side distribution and widening) and other techniques to recover integrity and quality highlighting the musical essence.</p>
+    </div>
+    <script>
+      // Obtener el elemento con el id "bannerPP"
+      var bannerPP = document.getElementById("bannerPP");
+      // Obtener las imágenes dentro del bannerPP
+      var imagesPP = bannerPP.getElementsByTagName("img");
+      // Establecer un índice para indicar qué imagen se muestra
+      var indexPP = 0;
+      // Función para ocultar todas las imágenes excepto la primera
+      function hideImagesPP() {
+        for (var i = 1; i < imagesPP.length; i++) {
+          imagesPP[i].style.display = "none";
+        }
+      }
+      // Establecer una función para cambiar la imagen cada 3 segundos
+      function changeImagePP() {
+        // Ocultar todas las imágenes
+        for (var i = 0; i < imagesPP.length; i++) {
+          imagesPP[i].style.display = "none";
+        }
+        // Mostrar la imagen correspondiente al índice
+        imagesPP[indexPP].style.display = "block";
+        // Incrementar el índice o volver a cero si llega al final
+        indexPP++;
+        if (indexPP == imagesPP.length) {
+          indexPP = 0;
+        }
+      }
+      // Ocultar todas las imágenes excepto la primera al cargar la página
+      hideImagesPP();
+      // Llamar a la función cada 3 segundos
+      setInterval(changeImagePP, 3000);
+    </script>
+
+    <!-- Botones de Audio de sección-->
+    <div class="buttonContainer">
+      <button id="btnControl2" onclick="toggleControl2()">
+        <i class="fas fa-headphones"></i> Escuchar
+      </button>
+      <button id="btnAlternar2" onclick="toggleAudio2()">
+        <i class="fa-solid fa-sliders"></i> Comparar
+      </button>
+      <div class="tooltip">
+        <button id="btnPequeño2">
+          <i class="fas fa-info-circle" id="infoIcon2"></i>
+        </button>
+        <span class="tooltiptext" id="myTooltip2">
+          <p>Excerpt from the work <em>Mencía</em> by <em>Persey David</em> for the <em>National Guitar Contest of Costa Rica 2024</em>.</p>
+          <p>Processing: Cleaning of unintentional vocal and nasal sounds from air and rubbing.</p>
+          <p>Tools: Spot manipulation of spectrogram, equalizers and noise filters.</p>
+          <p><a href="https://open.spotify.com/intl-es/track/6NVxiVl0zibQpGnf236eCV?si=385a4b852ed94c62" target="_blank">Listen to complete work</a></p>
+          <p>Controls:</p>
+          <p><i class="fas fa-headphones" style="color: var(--play-color);"></i> Press "listen" to start or stop audio playback.</p>
+          <p><i class="fa-solid fa-sliders" style="color: var(--play-color);"></i> Press "compare" to turn on or off audio processing.</p>
+          <p><i class="fas fa-info-circle" style="color: var(--play-color);"></i> Press the info icon to open or close the audio description.</p>
+        </span>
+      </div>
+    </div>
+      <audio id="audio3" src="../Config/MP/RyT/0_TyR_0.wav"></audio>
+      <audio id="audio4" src="../Config/MP/RyT/1_TyR_1.wav"></audio>
+    <script>
+      let currentAudio2 = 'audio3'; // Audio que se reproduce actualmente
+      let previousAudio2 = ''; // Audio que se reproducia antes de alternar
+      let isPlaying2 = false; // Estado de reproducción (true: reproduciendo, false: pausado)
+      
+      function toggleControl2() {
+        const audio = document.getElementById(currentAudio2);
+        const button = document.getElementById('btnControl2'); // Selecciona el botón
+        const icon = button.querySelector('i'); // Selecciona el ícono
+        const buttonAlternar = document.getElementById('btnAlternar2');
+        const iconAlternar = buttonAlternar.querySelector('i');
+
+        // Detener el audio del primer par de botones
+        const audio1 = document.getElementById(currentAudio1);
+        audio1.pause();
+        isPlaying1 = false;
+        const button1 = document.getElementById('btnControl1');
+        const icon1 = button1.querySelector('i');
+        button1.textContent = '';
+        button1.appendChild(icon1);
+        button1.append(' Escuchar');
+        icon1.classList.remove('reproduciendo');
+
+        // Desactivar el ícono del botón "Comparar" del primer par
+        const buttonAlternar1 = document.getElementById('btnAlternar1');
+        const iconAlternar1 = buttonAlternar1.querySelector('i');
+        iconAlternar1.classList.remove('comparando');
+
+        // Asegurarse de que la próxima vez que se presione el botón del primer par, se reproduzca audio1
+        currentAudio1 = 'audio1';
+
+        // Detener el audio del tercer par de botones
+        const audio3 = document.getElementById(currentAudio3);
+        audio3.pause();
+        isPlaying3 = false;
+        const button3 = document.getElementById('btnControl3');
+        const icon3 = button3.querySelector('i');
+        button3.textContent = '';
+        button3.appendChild(icon3);
+        button3.append(' Escuchar');
+        icon3.classList.remove('reproduciendo');
+
+        // Desactivar el ícono del botón "Comparar" del tercer par
+        const buttonAlternar3 = document.getElementById('btnAlternar3');
+        const iconAlternar3 = buttonAlternar3.querySelector('i');
+        iconAlternar3.classList.remove('comparando');
+
+        // Asegurarse de que la próxima vez que se presione el botón del tercer par, se reproduzca audio5
+        currentAudio3 = 'audio5';
+
+        if (isPlaying2) {
+          audio.pause();
+          isPlaying2 = false;
+          button.textContent = '';
+          button.appendChild(icon);
+          button.append(' Escuchar'); //Reproducir
+          icon.classList.remove('reproduciendo');
+        } else {
+          // Nuevo comportamiento cuando ambos botones están apagados
+          if (currentAudio2 === 'audio3' && !iconAlternar.classList.contains('comparando')) {
+            currentAudio2 = 'audio4';
+            audio.pause();
+            const nuevoAudio = document.getElementById('audio4');
+            nuevoAudio.play();
+            iconAlternar.classList.add('comparando');
+          } else {
+            audio.play();
+          }
+          isPlaying2 = true;
+          button.textContent = '';
+          button.appendChild(icon);
+          button.append(' Escuchar'); //Pausar
+          icon.classList.add('reproduciendo');
+        }
+      }
+      function toggleAudio2() {
+        const audioActual = document.getElementById(currentAudio2);
+        const nuevoAudio = document.getElementById(currentAudio2 === 'audio3' ? 'audio4' : 'audio3');
+        const button = document.getElementById('btnControl2'); // Selecciona el botón escuchar
+        const icon = button.querySelector('i'); // Selecciona el ícono del botón escuchar
+        const buttonAlternar = document.getElementById('btnAlternar2'); // Selecciona el botón "Comparar"
+        const iconAlternar = buttonAlternar.querySelector('i'); // Selecciona el ícono del botón "Comparar"
+        
+        // Detener el audio del primer par de botones
+        const audio1 = document.getElementById(currentAudio1);
+        audio1.pause();
+        isPlaying1 = false;
+        const button1 = document.getElementById('btnControl1');
+        const icon1 = button1.querySelector('i');
+        button1.textContent = '';
+        button1.appendChild(icon1);
+        button1.append(' Escuchar');
+        icon1.classList.remove('reproduciendo');
+
+        // Desactivar el ícono del botón "Comparar" del primer par
+        const buttonAlternar1 = document.getElementById('btnAlternar1');
+        const iconAlternar1 = buttonAlternar1.querySelector('i');
+        iconAlternar1.classList.remove('comparando');
+
+        // Asegurarse de que la próxima vez que se presione el botón del primer par, se reproduzca audio1
+        currentAudio1 = 'audio1';
+
+        // Detener el audio del tercer par de botones
+        const audio3 = document.getElementById(currentAudio3);
+        audio3.pause();
+        isPlaying3 = false;
+        const button3 = document.getElementById('btnControl3');
+        const icon3 = button3.querySelector('i');
+        button3.textContent = '';
+        button3.appendChild(icon3);
+        button3.append(' Escuchar');
+        icon3.classList.remove('reproduciendo');
+
+        // Desactivar el ícono del botón "Comparar" del tercer par
+        const buttonAlternar3 = document.getElementById('btnAlternar3');
+        const iconAlternar3 = buttonAlternar3.querySelector('i');
+        iconAlternar3.classList.remove('comparando');
+
+        // Asegurarse de que la próxima vez que se presione el botón del tercer par, se reproduzca audio5
+        currentAudio3 = 'audio5';
+
+        if (isPlaying2) {
+          previousAudio2 = currentAudio2;
+          audioActual.pause();
+        }
+        currentAudio2 = nuevoAudio.id;
+        nuevoAudio.currentTime = audioActual.currentTime; // Reanudar desde la posición actual
+        nuevoAudio.play();
+        isPlaying2 = true;
+        icon.classList.add('reproduciendo'); // Add the "playing" class
+        // Cambia el color del  del botón alternar cuando se reproduce el audio 2
+        if (currentAudio2 === 'audio4') {
+          iconAlternar.classList.add('comparando'); // Agrega la clase específica para el audio4
+        } else {
+          iconAlternar.classList.remove('comparando'); // Elimina la clase específica para el audio4
+        }
+      }
+
+      // Función para manejar el clic en el botón pequeño o su ícono
+        function handleSmallButtonClick2(event) {
+          event.stopPropagation(); // Evita que el clic se propague al documento
+          var tooltip = document.getElementById("myTooltip2");
+          var icon = document.getElementById("infoIcon2");
+          tooltip.classList.toggle("show");
+          icon.classList.toggle("active");
+          }
+
+      // Asignar el manejador de eventos al botón pequeño
+        document.getElementById("btnPequeño2").addEventListener("click", handleSmallButtonClick2);
+
+      // Cerrar el tooltip si se hace clic fuera de él
+        document.addEventListener("click", function(event) {
+        var tooltip = document.getElementById("myTooltip2");
+        var btnPequeño = document.getElementById("btnPequeño2");
+        var icon = document.getElementById("infoIcon2");
+        if (!btnPequeño.contains(event.target) && tooltip.classList.contains('show')) {
+            tooltip.classList.remove('show');
+            icon.classList.remove('active');}
+        });
+    </script>
+
+    <!-- Línea divisora con bordes redondeados -->
+    <div class="divider"></div>
+
+    <!-- //#########################################  Inicio de sección  ############################################################# -->
+
+    <!-- Título de sección -->
+    <h1 style="text-align:left;" id="arreglos">Sound Synthesis</h1>
+
+    <!-- Texto y banner de sección -->
+    <div class="horizontal-section">
+      <p style="margin-right: 10px; text-align: justify; font-size: 15px;">Imagine a sound and shape it from scratch, from basic or complex waveforms (of oscillators, samples or noises) with concrete synthesis techniques (subtractive, additive, AM, FM, wave table), with design of envelopes ADSR (+DH), modulation with low frequency oscillators, effects for tone modeling and spatiality, and other techniques for creating unique and expressive sounds according to the artistic vision and musical context.</p>
+      <div id="bannerAC">
+        <div class="banner-image">
+          <img src="../Config/MP/SdS/4_S.jpg" alt="Imagen de sintetizador">
+        </div>
+        <div class="banner-image">
+          <img src="../Config/MP/SdS/1_V1.jpg" alt="Imagen de Vital">
+        </div>
+        <div class="banner-image">
+          <img src="../Config/MP/SdS/5_T.jpg" alt="Imagen de theremin">
+        </div>
+        <div class="banner-image">
+          <img src="../Config/MP/SdS/0_V0.jpg" alt="Imagen de Vital">
+        </div>
+        <div class="banner-image">
+          <img src="../Config/MP/SdS/2_SA.jpg" alt="Imagen de síntesis aditiva">
+        </div>
+        <div class="banner-image">
+          <img src="../Config/MP/SdS/3_E.jpg" alt="Imagen de efectos">
+        </div>
+      </div>
+    </div>
+    <script>
+      // Obtener el elemento con el id "bannerAC"
+      var bannerAC = document.getElementById("bannerAC");
+      // Obtener las imágenes dentro del bannerAC
+      var imagesAC = bannerAC.getElementsByTagName("img");
+      // Establecer un índice para indicar qué imagen se muestra
+      var indexAC = 0;
+
+      // Función para ocultar todas las imágenes excepto la primera
+      function hideImagesAC() {
+        for (var i = 1; i < imagesAC.length; i++) {
+          imagesAC[i].style.display = "none";
+        }
+      }
+      // Establecer una función para cambiar la imagen cada 3 segundos
+      function changeImageAC() {
+        // Ocultar todas las imágenes
+        for (var i = 0; i < imagesAC.length; i++) {
+          imagesAC[i].style.display = "none";
+        }
+        // Mostrar la imagen correspondiente al índice
+        imagesAC[indexAC].style.display = "block";
+        // Incrementar el índice o volver a cero si llega al final
+        indexAC++;
+        if (indexAC == imagesAC.length) {
+          indexAC = 0;
+        }
+      }
+      // Ocultar todas las imágenes excepto la primera al cargar la página
+      hideImagesAC();
+      // Llamar a la función cada 3 segundos
+      setInterval(changeImageAC, 3000);
+    </script>
+
+    <!-- Botones de Audio de sección-->
+    <div class="buttonContainer">
+      <button id="btnControl3" onclick="toggleControl3()">
+        <i class="fas fa-headphones"></i> Escuchar
+      </button>
+      <button id="btnAlternar3" onclick="toggleAudio3()">
+        <i class="fa-solid fa-sliders"></i> Comparar
+      </button>
+      <div class="tooltip">
+        <button id="btnPequeño3">
+          <i class="fas fa-info-circle" id="infoIcon3"></i>
+        </button>
+        <span class="tooltiptext" id="myTooltip3">
+          <p><em>Synthesized</em> by <em>Allan Vega</em> with instruments exclusively molded from oscillators and noise generators.</p>
+          <p>Processing: additive, subtractive and ring synthesis, envelope creation and tone modelling.</p>
+          <p>Tools: Wave and noise generators, equalizers and filters, spatiality effects and timbre.</p>
+          <p>Controls:</p>
+          <p><i class="fas fa-headphones" style="color: var(--play-color);"></i> Press "listen" to start or stop audio playback.</p>
+          <p><i class="fa-solid fa-sliders" style="color: var(--play-color);"></i> Press "compare" to turn on or off audio processing.</p>
+          <p><i class="fas fa-info-circle" style="color: var(--play-color);"></i> Press the info icon to open or close the audio description.</p>
+        </span>
+      </div>
+    </div>
+      <audio id="audio5" src="../Config/MP/SdS/0_SdS_0.wav"></audio>
+      <audio id="audio6" src="../Config/MP/SdS/1_SdS_1.wav"></audio>
+    <script>
+      let currentAudio3 = 'audio5'; // Audio que se reproduce actualmente
+      let previousAudio3 = ''; // Audio que se reproducia antes de alternar
+      let isPlaying3 = false; // Estado de reproducción (true: reproduciendo, false: pausado)
+      
+      function toggleControl3() {
+        const audio = document.getElementById(currentAudio3);
+        const button = document.getElementById('btnControl3'); // Selecciona el botón
+        const icon = button.querySelector('i'); // Selecciona el ícono
+        const buttonAlternar = document.getElementById('btnAlternar3');
+        const iconAlternar = buttonAlternar.querySelector('i');
+
+        // Detener el audio del primer par de botones
+          const audio1 = document.getElementById(currentAudio1);
+          audio1.pause();
+          isPlaying1 = false;
+          const button1 = document.getElementById('btnControl1');
+          const icon1 = button1.querySelector('i');
+          button1.textContent = '';
+          button1.appendChild(icon1);
+          button1.append(' Escuchar');
+          icon1.classList.remove('reproduciendo');
+
+        // Desactivar el ícono del botón "Comparar" del primer par
+          const buttonAlternar1 = document.getElementById('btnAlternar1');
+          const iconAlternar1 = buttonAlternar1.querySelector('i');
+          iconAlternar1.classList.remove('comparando');
+
+        // Asegurarse de que la próxima vez que se presione el botón del primer par, se reproduzca audio1
+          currentAudio1 = 'audio1';
+
+        // Detener el audio del segundo par de botones
+          const audio2 = document.getElementById(currentAudio2);
+          audio2.pause();
+          isPlaying2 = false;
+          const button2 = document.getElementById('btnControl2');
+          const icon2 = button2.querySelector('i');
+          button2.textContent = '';
+          button2.appendChild(icon2);
+          button2.append(' Escuchar');
+          icon2.classList.remove('reproduciendo');
+
+        // Desactivar el ícono del botón "Comparar" del segundo par
+          const buttonAlternar2 = document.getElementById('btnAlternar2');
+          const iconAlternar2 = buttonAlternar2.querySelector('i');
+          iconAlternar2.classList.remove('comparando');
+
+        // Asegurarse de que la próxima vez que se presione el botón del segundo par, se reproduzca audio3
+         currentAudio2 = 'audio3';
+
+        if (isPlaying3) {
+          audio.pause();
+          isPlaying3 = false;
+          button.textContent = '';
+          button.appendChild(icon);
+          button.append(' Escuchar'); //Reproducir
+          icon.classList.remove('reproduciendo');
+        } else {
+          // Nuevo comportamiento cuando ambos botones están apagados
+          if (currentAudio3 === 'audio5' && !iconAlternar.classList.contains('comparando')) {
+            currentAudio3 = 'audio6';
+            audio.pause();
+            const nuevoAudio = document.getElementById('audio6');
+            nuevoAudio.play();
+            iconAlternar.classList.add('comparando');
+          } else {
+            audio.play();
+          }
+          isPlaying3 = true;
+          button.textContent = '';
+          button.appendChild(icon);
+          button.append(' Escuchar'); //Pausar
+          icon.classList.add('reproduciendo');
+        }
+      }
+      function toggleAudio3() {
+        const audioActual = document.getElementById(currentAudio3);
+        const nuevoAudio = document.getElementById(currentAudio3 === 'audio5' ? 'audio6' : 'audio5');
+        const button = document.getElementById('btnControl3'); // Selecciona el botón escuchar
+        const icon = button.querySelector('i'); // Selecciona el ícono del botón escuchar
+        const buttonAlternar = document.getElementById('btnAlternar3'); // Selecciona el botón "Comparar"
+        const iconAlternar = buttonAlternar.querySelector('i'); // Selecciona el ícono del botón "Comparar"
+        
+        // Detener el audio del primer par de botones
+          const audio1 = document.getElementById(currentAudio1);
+          audio1.pause();
+          isPlaying1 = false;
+          const button1 = document.getElementById('btnControl1');
+          const icon1 = button1.querySelector('i');
+          button1.textContent = '';
+          button1.appendChild(icon1);
+          button1.append(' Escuchar');
+          icon1.classList.remove('reproduciendo');
+
+        // Desactivar el ícono del botón "Comparar" del primer par
+          const buttonAlternar1 = document.getElementById('btnAlternar1');
+          const iconAlternar1 = buttonAlternar1.querySelector('i');
+          iconAlternar1.classList.remove('comparando');
+
+        // Asegurarse de que la próxima vez que se presione el botón del primer par, se reproduzca audio1
+         currentAudio1 = 'audio1';
+
+        // Detener el audio del segundo par de botones
+          const audio2 = document.getElementById(currentAudio2);
+          audio2.pause();
+          isPlaying2 = false;
+          const button2 = document.getElementById('btnControl2');
+          const icon2 = button2.querySelector('i');
+          button2.textContent = '';
+          button2.appendChild(icon2);
+          button2.append(' Escuchar');
+          icon2.classList.remove('reproduciendo');
+
+        // Desactivar el ícono del botón "Comparar" del segundo par
+          const buttonAlternar2 = document.getElementById('btnAlternar2');
+          const iconAlternar2 = buttonAlternar2.querySelector('i');
+          iconAlternar2.classList.remove('comparando');
+
+        // Asegurarse de que la próxima vez que se presione el botón del segundo par, se reproduzca audio3
+         currentAudio2 = 'audio3';
+
+        if (isPlaying3) {
+          previousAudio3 = currentAudio3;
+          audioActual.pause();
+        }
+        currentAudio3 = nuevoAudio.id;
+        nuevoAudio.currentTime = audioActual.currentTime; // Reanudar desde la posición actual
+        nuevoAudio.play();
+        isPlaying3 = true;
+        icon.classList.add('reproduciendo'); // Add the "playing" class
+        // Cambia el color del  del botón alternar cuando se reproduce el audio 2
+        if (currentAudio3 === 'audio6') {
+          iconAlternar.classList.add('comparando'); // Agrega la clase específica para el audio6
+        } else {
+          iconAlternar.classList.remove('comparando'); // Elimina la clase específica para el audio6
+        }
+      }
+
+      // Función para manejar el clic en el botón pequeño o su ícono
+        function handleSmallButtonClick3(event) {
+          event.stopPropagation(); // Evita que el clic se propague al documento
+          var tooltip = document.getElementById("myTooltip3");
+          var icon = document.getElementById("infoIcon3");
+          tooltip.classList.toggle("show");
+          icon.classList.toggle("active");
+          }
+
+      // Asignar el manejador de eventos al botón pequeño
+        document.getElementById("btnPequeño3").addEventListener("click", handleSmallButtonClick3);
+
+      // Cerrar el tooltip si se hace clic fuera de él
+        document.addEventListener("click", function(event) {
+        var tooltip = document.getElementById("myTooltip3");
+        var btnPequeño = document.getElementById("btnPequeño3");
+        var icon = document.getElementById("infoIcon3");
+        if (!btnPequeño.contains(event.target) && tooltip.classList.contains('show')) {
+            tooltip.classList.remove('show');
+            icon.classList.remove('active');}
+        });
+
+    </script>
+
+    <!-- Línea divisora con bordes redondeados -->
+    <div class="divider"></div>
+
+      <!-- Pie de página -->
+    <footer style="display: flex; flex-direction: column; align-items: center;">
+      <!-- <h1>Información de contacto<br></h1> -->
+    <h1 style="text-decoration: underline;">Contact Information<br></h1>
+    <p class="in_line"><span class="icon"><i class="fas fa-map-marker-alt"></i></span>10829 Tempelhof-Schöneberg, Berlín, Germany.</p>
+      <p class="in_line"><span class="icon"><i class="fas fa-envelope"></i></span>saallansa@gmail.com</p>
+      <p class="in_line"><span class="icon" title="Teléfono"><i class="fas fa-phone"></i></span>+49 176 63302948</p>
+      <p class="in_line"><span class="icon"><i class="fab fa-whatsapp"></i></span>+506 89171990</p>
+      <pa class="in_line"><span class="icon"><i class="fab fa-facebook"></i></span><a href="https://www.facebook.com/profile.php?id=100015492180777" target="_blank">Allan Vega</a></pa>
+      <pa class="in_line"><span class="icon"><i class="fab fa-instagram"></i></span><a href="https://www.instagram.com/allanvegav/" target="_blank">Allan Vega</a></pa>
+    </footer>
+  </body>
+</html>

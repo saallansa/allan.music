@@ -8,9 +8,11 @@
     :root {
       --primary-color: #D1D1D1; /* Gris claro */
       --secondary-color: #CCCCCC;
-      --accent-color: #FFFFFF;
+        --accent-color: #FFD700; /* Amarillo */
       --background-color: #000000;
       --optional-color: #666666;
+        --play-color: #008000; /* Verde 1 */
+        --blue-links: #007bff; /* Azul para links*/
     }
   </style>
 </head>
@@ -28,9 +30,11 @@
   </div>
     <!-- Encabezado     -->
     <div class="nav">
-      <!-- <img src="Images/foto.jpg" alt="Logo" class="logo"> -->
-      <p style="text-align:center; font-size:38px; color: var(--primary-color);font-family: Arial, serif;font-weight: Bold;">Allan Vega</p>
-      <!-- <p style="text-align:center; font-size:38px; color:var(--primary-color);font-family: Arial, serif;font-weight: Bold;">Allan Vega</p> -->
+      <a href="#" style="text-decoration: none;">
+        <h1 class="accent-hover" style="text-align: center; font-size: 38px; font-family: Arial, serif; font-weight: bold;">
+          <span>Allan Vega</span>
+        </h1>
+      </a>
       <ul>
         <li><a href="#sinfonica"><span class="icon"><i class="fas fa-drum"></i></span><span style="display: inline-block; text-align: center;">Symphonic<br>Percussion</span></a></li>
         <li><a href="#popular"><span class="icon"><i class="fa-solid fa-headphones"></i></span><span style="display: inline-block; text-align: center;">Popular<br>Percussion</span></a></li>
@@ -388,7 +392,7 @@
     <h1 style="text-align:left;" id="produccion">Music Production <span style="font-size: 0.6em;">(Current Project)</span></h1>
 
     <div class="horizontal-section">
-      <p style="margin-right: 10px; text-align: justify;">Since 2022, I study a master’s degree in musical production that includes electronic and urban music, music composition for cinema, composition and implementation of music for video games and song writing, with practices in areas such as sound design, recording, mixing and audio mastering.</p>
+      <p style="margin-right: 10px; text-align: justify;">I graduated in master in music creation and production that includes electronic and urban music, composition for cinema, composition and implementation of music for video games and song writing, with practices in areas such as sound design, recording, synthesis, mixing and audio mastering. <a href="Music_Production.html" style="color: var(--blue-links); " onmouseover="this.style.color='var(--accent-color)';" onmouseout="this.style.color='var(--blue-links)';">See details and examples...</a></p>
 
     <!-- Banner de Producción musical -->
 
@@ -454,7 +458,8 @@
     <p class="in_line"><span class="icon"><i class="fas fa-envelope"></i></span>saallansa@gmail.com</p>
     <p class="in_line"><span class="icon" title="Teléfono"><i class="fas fa-phone"></i></span>+49 176 63302948</p>
     <p class="in_line"><span class="icon"><i class="fab fa-whatsapp"></i></span>+506 89171990</p>
-    <p class="in_line"><span class="icon"><i class="fab fa-facebook"></i></span><a href="https://www.facebook.com/profile.php?id=100015492180777" target="_blank">Allan Vega</a></p>
+    <pa class="in_line"><span class="icon"><i class="fab fa-facebook"></i></span><a href="https://www.facebook.com/profile.php?id=100015492180777" target="_blank">Allan Vega</a></pa>
+    <pa class="in_line"><span class="icon"><i class="fab fa-instagram"></i></span><a href="https://www.instagram.com/allanvegav/" target="_blank">Allan Vega</a></pa>
 </footer>
 </body>
 </html>

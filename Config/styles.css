@@ -2,9 +2,11 @@
   :root {
     --primary-color: #D1D1D1; /* Gris claro */
     --secondary-color: #CCCCCC;
-    --accent-color: #FFFFFF;
+    --accent-color: #FFD700;
     --background-color: #000000;
     --optional-color: #666666;
+    --play-color: #008000; /* Verde 1 */
+    --blue-links: #007bff; /* Azul para links*/
   }
   body {
     font-family: Arial, sans-serif;
@@ -43,7 +45,13 @@
   }
   .nav ul li a:hover {
     color: var(--accent-color);
+    transform: scale(2.1); /* Aumenta el tamaño un 10% (revisar)*/
   }
+
+  .accent-hover:hover {
+    color: var(--accent-color);
+  }
+
   #banner {
     width: 100%;
     height: 400px;
@@ -94,7 +102,9 @@
   }
   /* Estilos para las imágenes dentro del banner */
   .banner-image {
-    max-height: 200px; /* Ajustar la altura máxima deseada */
+    max-height: 230px; /* Ajustar la altura máxima deseada */
+    /*ratio of images for headera: 4:3 (0.75), for example 750/1000 pixels;*/
+    /*ratio of images for sections: 0.7, for example 937/1337 pixels;*/
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -119,15 +129,131 @@
   .divider {
     width: 100%;
     height: 5px;
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
+    /*background-color: #FFD700;*/
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 5px; /* Ajusta este valor para controlar el radio de los bordes redondeados */
   }
+
+  /*----------  Inicio Botones  --------*/
+  .buttonContainer {
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly between buttons */
+    margin-top: 0px; /* Add spacing between the carousel and buttons */
+    padding: 10px; /* Add padding around buttons */
+  }
+
+  .buttonContainer button {
+  background-color: #accent-color; /* Use your accent color */
+  cursor: pointer; /* Indicate clickable button */
+  }
+
+  .buttonContainer button i {
+  font-size: 30px; /* Size of icons */
+  }
+
+  #btnControl1, #btnAlternar1, #btnControl2, #btnAlternar2, #btnControl3, #btnAlternar3 {
+    flex: 1; /* Make buttons flexible and grow to fill available space */
+    margin: 0 5px; /* Add horizontal margin */
+    white-space: nowrap; /* Prevent text wrapping */
+    text-align: center; /* Center text within buttons */
+    display: flex; /* Set buttons to flex containers */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    min-height: 60px; /* Set a minimum height */
+    line-height: 10px; /* Set the line height to match the minimum height */
+  }
+
+  #btnPequeño1, #btnPequeño2, #btnPequeño3 {
+    margin: 10px 5px; /* Add horizontal margin */
+    white-space: nowrap; /* Prevent text wrapping */
+    text-align: center; /* Center text within buttons */
+    display: flex; /* Set buttons to flex containers */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    min-height: 40px; /* Set a minimum height */
+    line-height: 10px; /* Set the line height to match the minimum height */
+    width: 40px; /* Ancho fijo para el botón pequeño */
+  }
+
+  #btnControl1 .fas.fa-headphones, #btnAlternar1 .fa-solid.fa-sliders, #btnControl2 .fas.fa-headphones, #btnAlternar2 .fa-solid.fa-sliders, #btnControl3 .fas.fa-headphones, #btnAlternar3 .fa-solid.fa-sliders {
+    margin-bottom: 10px; /* Add space between icon and text */
+  }
+  .reproduciendo {
+    color: var(--play-color);
+    animation: pulsate 1s infinite;
+  }
+  .comparando {
+    color: var(--play-color);
+  }
+  @keyframes pulsate {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+
+
+  /* Estilos para el tooltip */
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    color: inherit; /* Esto heredará el color del texto del body */
+  }
+
+  .tooltiptext,
+  .tooltiptext p,
+  .tooltiptext a {
+    font-family: Arial, sans-serif;
+    color: inherit; /* Esto heredará el color del texto del body */
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 750px;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    border-radius: 20px;
+    padding: 20px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    right: -30%; /* Cambiado de left: 50% a right: 100% */
+    margin-right: 5px; /* Añadido margen a la derecha */
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-align: left; /* Alinear el texto a la izquierda */
+    border: 5px solid var(--accent-color); /* Añade esta línea para el borde amarillo */
+  }
+
+  .tooltip .tooltiptext.show {
+    visibility: visible;
+    opacity: 1;
+  }
+  /* Estilos adicionales para el contenido del tooltip */
+  .tooltip .tooltiptext p {
+    margin: 0 0 10px 0; /* Añadir margen inferior a los párrafos */
+  }
+  .tooltip .tooltiptext a {
+    color: var(--blue-links); /* Color azul para los enlaces*/
+    text-decoration: underline; /* Subrayar los enlaces */
+  }
+  .tooltip .tooltiptext a:hover {
+    text-decoration: none; /* Quitar el subrayado al pasar el mouse */
+  }
+  /* Estilo para el ícono cuando el tooltip está visible */
+  #infoIcon1.active, #infoIcon2.active, #infoIcon3.active {
+    color: var(--play-color);
+  }  
+  /*----------  Final Botones  --------*/
+
   h1 {
     color: var(--primary-color);
   }
   /* Estilos para el pie de página */
+
   footer {
     text-align: center; /* Centra el contenido del pie de página */
     color: var(--primary-color); /* Utiliza el mismo color primario definido en :root */
@@ -147,6 +273,11 @@
     display: block; /* Crea un diseño en bloque */
   }
 
+  footer pa {
+    margin: 5px 0; /* Espacio entre cada párrafo */
+    display: block; /* Crea un diseño en bloque */
+  }
+
   footer .icon {
     margin-right: 10px; /* Espacio entre el ícono y el texto */
     font-size: 18px; /* Tamaño del ícono */
@@ -157,9 +288,11 @@
     text-decoration: none; /* Quita el subrayado del enlace */
   }
 
-  footer a:hover {
-    color: var(--accent-color); /* Cambia el color al pasar el cursor sobre el enlace */
-  }
+  
+  footer pa:hover a, footer pa:hover i {
+  color: var(--accent-color); /* Cambia el color del texto y el ícono al pasar el cursor */
+  transform: scale(1.1); /* Aumenta el tamaño un 10% */
+}
 
   /* Estilos para la alineación de ícono y número de teléfono */
   footer .in_line {
